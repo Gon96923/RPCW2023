@@ -11,6 +11,10 @@ Foram criadas 3 classes nesta ontologia:
 - Espécie
 - Morada
 
+Foram criadas as Object Properties:
+- naMorada: Planta -> Morada
+- éDaEspécie: Planta -> Espécie
+
 A classe Planta contém as Data Properties:
 - caldeira
 - dataDeActualização
@@ -33,10 +37,6 @@ A classe Morada contém as Data Properties:
 - rua
 
 Individuos desta classe são identificados com \<local>\_\<codigoDeRua>\, uma vez que foram encontrados casos em que o mesmo codigoDeRua se refeira a multiplas moradas.
-
-Foram criadas as Object Properties:
-- naMorada: Planta -> Morada
-- éDaEspécie: Planta -> Espécie
 
 A classe Espécie contém as Data Properties:
 - nomeCientifico
