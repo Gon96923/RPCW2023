@@ -1,13 +1,44 @@
 # Problema
 
-Com base na base de dados contido no ficheiro <planta.json>, crie uma ontologia utilizando o programa Protegé.
+Com base na base de dados contido no ficheiro <planta.json>, crie uma ontologia utilizando a ferramenta Protegé.
 
 # Estratégias
+
+Uma vez que certos caracteres não são reconhecidos pela ferramenta Protegé, substituí o caracter ' ' pelo caracter '_' e o caracter '"' é eliminado, utilizando o comando replace.
 
 Foram criadas 3 classes nesta ontologia:
 - Planta
 - Espécie
 - Morada
+
+A classe Planta contém as Data Properties:
+- caldeira
+- dataDeActualização
+- dataDePlantação
+- estado
+- gestor
+- id
+- implantação
+- numeroDeIntervenções
+- numeroDeRegisto
+- origem
+- tutor
+
+Individuos desta classe são identificados com <id>.
+
+A classe Morada contém as Data Properties:
+- codigoDeRua
+- freguesia
+- local
+- rua
+
+Individuos desta classe são identificados com <local>_<codigoDeRua>, uma vez que foram encontrados casos em que o mesmo codigoDeRua se refeira a multiplas moradas.
+
+A classe Espécie contém as Data Properties:
+- nomeCientifico
+- nomeEspécie
+
+Individuos desta classe são identificados com <nomeEspécie>.
 
 # Resultado
 
