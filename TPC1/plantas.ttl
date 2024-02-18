@@ -1,0 +1,39 @@
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/plantas#pinheiro_manso
+:pinheiro_manso rdf:type owl:NamedIndividual ,
+                         :Espécie ;
+                :nomeEspécie "pinheiro_manso" ;
+                :nomeCientifico "Pinus_pinea" ;
+                <http://purl.org/dc/elements/1.1/creator> "gvale" .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/plantas#Zambujeiro_1685467
+<https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/plantas#Zambujeiro_1685467> rdf:type owl:NamedIndividual ,
+                                                                                 :Morada ;
+                                                                        :codigoDeRua "1685467"^^xsd:int ;
+                                                                        :freguesia "Alcabideche" ;
+                                                                        :local "Zambujeiro" ;
+                                                                        :rua "Rua_Júlio_Dinis" ;
+                                                                        <http://purl.org/dc/elements/1.1/creator> "gvale" .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/plantas#20615557
+<https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/plantas#20615557> rdf:type owl:NamedIndividual ,
+                                                                                  :Planta ;
+                                                                         :naMorada "1685467"^^xsd:int ;
+                                                                         :éDaEspécie :pinheiro_manso ;
+                                                                         :caldeira "Sim" ;
+                                                                         :dataDeActualização "23/07/2021_19:50:54" ;
+                                                                         :dataDePlantação "" ;
+                                                                         :estado "Adulto" ;
+                                                                         :gestor "DGEV" ;
+                                                                         :id 20615557 ;
+                                                                         :implantação "Arruamento" ;
+                                                                         :numeroDeIntervenções "6"^^xsd:int ;
+                                                                         :numeroDeRegisto "3"^^xsd:int ;
+                                                                         :origem "" ;
+                                                                         :tutor "Sim" ;
+                                                                         <http://purl.org/dc/elements/1.1/creator> "gvale" .
+        
+
