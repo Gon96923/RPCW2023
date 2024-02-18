@@ -1,6 +1,6 @@
 # Problema
 
-Com base na base de dados contido no ficheiro <planta.json>, crie uma ontologia utilizando a ferramenta Protegé.
+Com base na base de dados contido no ficheiro \<planta.json>\, crie uma ontologia utilizando a ferramenta Protegé.
 
 # Estratégias
 
@@ -24,7 +24,7 @@ A classe Planta contém as Data Properties:
 - origem
 - tutor
 
-Individuos desta classe são identificados com <id>.
+Individuos desta classe são identificados com \<id>\.
 
 A classe Morada contém as Data Properties:
 - codigoDeRua
@@ -32,13 +32,17 @@ A classe Morada contém as Data Properties:
 - local
 - rua
 
-Individuos desta classe são identificados com \<local>\_<codigoDeRua>, uma vez que foram encontrados casos em que o mesmo codigoDeRua se refeira a multiplas moradas.
+Individuos desta classe são identificados com \<local>\_\<codigoDeRua>\, uma vez que foram encontrados casos em que o mesmo codigoDeRua se refeira a multiplas moradas.
+
+Foram criadas as Object Properties:
+- naMorada: Planta -> Morada
+- éDaEspécie: Planta -> Espécie
 
 A classe Espécie contém as Data Properties:
 - nomeCientifico
 - nomeEspécie
 
-Individuos desta classe são identificados com <nomeEspécie>.
+Individuos desta classe são identificados com \<nomeEspécie>\.
 
 # Resultado
 
