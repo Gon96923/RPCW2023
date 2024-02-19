@@ -36,7 +36,7 @@ A classe **Morada** contém as **Data Properties**:
 - local
 - rua
 
-Individuos desta classe são identificados com _local___codigoDeRua_, uma vez que foram encontrados casos em que o mesmo _codigoDeRua_ se refeira a multiplas moradas.
+Individuos desta classe são identificados com _local_codigoDeRua_, uma vez que foram encontrados casos em que o mesmo _codigoDeRua_ se refeira a multiplas moradas.
 
 A classe **Espécie** contém as **Data Properties**:
 - nomeCientifico
