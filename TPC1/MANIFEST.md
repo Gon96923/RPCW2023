@@ -48,5 +48,5 @@ Individuos desta classe são identificados com _nomeEspécie_.
 
 ![graph](https://github.com/Gon96923/RPCW2024/blob/main/TPC1/graphPrint.png)
 
-De forma a representar a ontologia de uma forma fácil de entender foi utilizada a ferramenta **WebVOWL**: 
+De forma a representar a ontologia de uma forma apelativa e fácil de entender foi utilizada a ferramenta **WebVOWL**: 
 https://service.tib.eu/webvowl
