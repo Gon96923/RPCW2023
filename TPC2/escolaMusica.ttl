@@ -1,0 +1,5094 @@
+
+@prefix : <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica/> .
+
+<https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#ensinaInstrumento
+:ensinaInstrumento rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Curso ;
+                   rdfs:range :Instrumento .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#noCurso
+:noCurso rdf:type owl:ObjectProperty ;
+         rdfs:domain :Aluno ;
+         rdfs:range :Curso .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#tocaInstrumento
+:tocaInstrumento rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Aluno ;
+                 rdfs:range :Instrumento .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#alunoAnoCurso
+:alunoAnoCurso rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Aluno ;
+               rdfs:range xsd:int .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#alunoDataDeNascimento
+:alunoDataDeNascimento rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Aluno ;
+                       rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#alunoId
+:alunoId rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Aluno ;
+         rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#alunoNome
+:alunoNome rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Aluno ;
+           rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#cursoDesignacao
+:cursoDesignacao rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Curso ;
+                 rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#cursoDuracao
+:cursoDuracao rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Curso ;
+              rdfs:range xsd:int .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#cursoId
+:cursoId rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Curso ;
+         rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#cursoInstrumento
+:cursoInstrumento rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Curso ;
+                  rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#instrumentoId
+:instrumentoId rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Instrumento ;
+               rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#instrumentoNome
+:instrumentoNome rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Instrumento ;
+                 rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Aluno
+:Aluno rdf:type owl:Class .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Curso
+:Curso rdf:type owl:Class .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Instrumento
+:Instrumento rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A1510
+:A1510 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-4-19" ;
+       :alunoId "A1510" ;
+       :alunoNome "ADEMAR FONTES DE MAGALHAES GONCALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A32597
+:A32597 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-9-5" ;
+       :alunoId "A32597" ;
+       :alunoNome "ADERITO NELSON MIRANDA DE OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36539
+:A36539 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-10-26" ;
+       :alunoId "A36539" ;
+       :alunoNome "ADMILSON CESAR ANDRADE RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38165
+:A38165 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-2-25" ;
+       :alunoId "A38165" ;
+       :alunoNome "AFONSO DELERUE ARRIAGA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38176
+:A38176 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2000-7-18" ;
+       :alunoId "A38176" ;
+       :alunoNome "AGOSTINHO MANUEL ALVES DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38196
+:A38196 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1997-12-7" ;
+       :alunoId "A38196" ;
+       :alunoNome "ALEXANDRE COELHO CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35271
+:A35271 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-12-20" ;
+       :alunoId "A35271" ;
+       :alunoNome "ALEXANDRE JORGE CAMELO FARIA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38193
+:A38193 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-2-2" ;
+       :alunoId "A38193" ;
+       :alunoNome "ALEXANDRE MANUEL PEREIRA DE MIRANDA PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A18141
+:A18141 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-6-23" ;
+       :alunoId "A18141" ;
+       :alunoNome "ALEXANDRE MIGUEL DA COSTA FERREIRA DOS SANTOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38218
+:A38218 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-7-14" ;
+       :alunoId "A38218" ;
+       :alunoNome "ALEXANDRINA MARIA FERREIRA LEMOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36487
+:A36487 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1996-1-7" ;
+       :alunoId "A36487" ;
+       :alunoNome "ALI DOS REIS MOTA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35272
+:A35272 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1997-11-7" ;
+       :alunoId "A35272" ;
+       :alunoNome "ANA LUISA PARREIRA NUNES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27589
+:A27589 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-1-13" ;
+       :alunoId "A27589" ;
+       :alunoNome "ANA MARGARIDA FIDALGO PINHEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A25073
+:A25073 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-12-12" ;
+       :alunoId "A25073" ;
+       :alunoNome "ANA MARGARIDA LIMA ALEM" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38169
+:A38169 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-6-5" ;
+       :alunoId "A38169" ;
+       :alunoNome "ANDRE ABILIO NUNES ROCHA RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33822
+:A33822 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2001-11-13" ;
+       :alunoId "A33822" ;
+       :alunoNome "ANDRE FERNANDES MARTINS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38214
+:A38214 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-2-14" ;
+       :alunoId "A38214" ;
+       :alunoNome "ANDRE FILIPE DE SOUSA VIVEIROS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35274
+:A35274 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-7-20" ;
+       :alunoId "A35274" ;
+       :alunoNome "ANDRE FILIPE OLIVEIRA MARTINS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A29871
+:A29871 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1997-8-1" ;
+       :alunoId "A29871" ;
+       :alunoNome "ANDRE LEITE FERREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38215
+:A38215 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1998-5-28" ;
+       :alunoId "A38215" ;
+       :alunoNome "ANDRE RIBEIRO RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38117
+:A38117 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-2-20" ;
+       :alunoId "A38117" ;
+       :alunoNome "ANTONIO ANDRE MARQUES RIBEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35277
+:A35277 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-5-5" ;
+       :alunoId "A35277" ;
+       :alunoNome "ANTONIO MANUEL MARTINS PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35278
+:A35278 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2001-3-13" ;
+       :alunoId "A35278" ;
+       :alunoNome "ANTONIO MANUEL RODRIGUES FERNANDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38138
+:A38138 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1998-10-7" ;
+       :alunoId "A38138" ;
+       :alunoNome "ANTONIO NUNO BACELAR MARTINS BARREIRO COVAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35280
+:A35280 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1997-2-10" ;
+       :alunoId "A35280" ;
+       :alunoNome "ANTONIO RICARDO PEREIRA GONCALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33057
+:A33057 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1999-7-5" ;
+       :alunoId "A33057" ;
+       :alunoNome "ANTONIO RUI MIRANDA DE LEMOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38143
+:A38143 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2000-1-9" ;
+       :alunoId "A38143" ;
+       :alunoNome "ANTONIO SERGIO MATOS SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30166
+:A30166 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-9-6" ;
+       :alunoId "A30166" ;
+       :alunoNome "ANTONIO TIAGO MORGADO PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36971
+:A36971 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2001-4-2" ;
+       :alunoId "A36971" ;
+       :alunoNome "AUGUSTO JORGE PEREIRA DA COSTA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38132
+:A38132 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-4-6" ;
+       :alunoId "A38132" ;
+       :alunoNome "AVELINO JOSE DA COSTA REGO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33140
+:A33140 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-2-11" ;
+       :alunoId "A33140" ;
+       :alunoNome "AVELINO RODRIGO ARAUJO SEMELHE DE SOUSA PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33141
+:A33141 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-8-23" ;
+       :alunoId "A33141" ;
+       :alunoNome "BARBARA ALEXANDRA EUSEBIO FREITAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33291
+:A33291 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-9-28" ;
+       :alunoId "A33291" ;
+       :alunoNome "BARBARA SOFIA ARAUJO DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33142
+:A33142 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-11-16" ;
+       :alunoId "A33142" ;
+       :alunoNome "BRUNO CESAR PEREIRA DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A20044
+:A20044 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-7-28" ;
+       :alunoId "A20044" ;
+       :alunoNome "BRUNO DE ALMEIDA RAMOS PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35283
+:A35283 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-2-22" ;
+       :alunoId "A35283" ;
+       :alunoNome "BRUNO EDGAR BERNARDO TEIXEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35284
+:A35284 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-6-4" ;
+       :alunoId "A35284" ;
+       :alunoNome "BRUNO EMANUEL TEIXEIRA DE CASTRO ARAUJO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38156
+:A38156 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2000-6-11" ;
+       :alunoId "A38156" ;
+       :alunoNome "BRUNO FILIPE DA COSTA HERMENEGILDO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35285
+:A35285 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-4-14" ;
+       :alunoId "A35285" ;
+       :alunoNome "BRUNO GABRIEL LEAL MACHADO DOS SANTOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36422
+:A36422 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-2-14" ;
+       :alunoId "A36422" ;
+       :alunoNome "BRUNO JOSE DE MACEDO SOARES AMOR" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33143
+:A33143 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1997-3-20" ;
+       :alunoId "A33143" ;
+       :alunoNome "BRUNO MIGUEL CAMPOS RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33145
+:A33145 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1997-6-20" ;
+       :alunoId "A33145" ;
+       :alunoNome "BRUNO MIGUEL FLORES DIAMANTINO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33146
+:A33146 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-11-15" ;
+       :alunoId "A33146" ;
+       :alunoNome "BRUNO MIGUEL MAGALHAES AZEVEDO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33148
+:A33148 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1998-3-21" ;
+       :alunoId "A33148" ;
+       :alunoNome "BRUNO MIGUEL TEIXEIRA PAIVA DE FARIA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38124
+:A38124 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2000-1-21" ;
+       :alunoId "A38124" ;
+       :alunoNome "BRUNO RICARDO CUNHA MAGALHAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30176
+:A30176 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1998-4-14" ;
+       :alunoId "A30176" ;
+       :alunoNome "BRUNO RICARDO DUARTE MAGALHAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35808
+:A35808 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-11-11" ;
+       :alunoId "A35808" ;
+       :alunoNome "CANDIDO MIGUEL REBELO BARROS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38126
+:A38126 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-6-14" ;
+       :alunoId "A38126" ;
+       :alunoNome "CARLOS ALFREDO MACIEIRA DE FARIA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33689
+:A33689 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-5-10" ;
+       :alunoId "A33689" ;
+       :alunoNome "CARLOS ANDRE BRITO RIBEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38125
+:A38125 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-5-13" ;
+       :alunoId "A38125" ;
+       :alunoNome "CARLOS CESAR MADUREIRA ROMANO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A24654
+:A24654 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-11-2" ;
+       :alunoId "A24654" ;
+       :alunoNome "CARLOS DE SOUSA CABRAL BRANDAO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A20021
+:A20021 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-12-4" ;
+       :alunoId "A20021" ;
+       :alunoNome "CARLOS JOSE DA CUNHA RIBEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35291
+:A35291 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1998-6-17" ;
+       :alunoId "A35291" ;
+       :alunoNome "CARLOS MIGUEL TAVARES LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A34640
+:A34640 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-8-9" ;
+       :alunoId "A34640" ;
+       :alunoNome "CARLOS PRUDENCIO DO ESPIRITO CRISOSTOMO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38207
+:A38207 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-8-22" ;
+       :alunoId "A38207" ;
+       :alunoNome "CATARINA ISABEL DE OLIVEIRA MATEUS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A32010
+:A32010 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-9-1" ;
+       :alunoId "A32010" ;
+       :alunoNome "CATARINA SOFIA MARTINHO LUIS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35052
+:A35052 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-5-24" ;
+       :alunoId "A35052" ;
+       :alunoNome "CESAR FILIPE DA CRUZ GOMES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35440
+:A35440 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-6-26" ;
+       :alunoId "A35440" ;
+       :alunoNome "DANIEL BARBOSA ALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A32648
+:A32648 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-1-23" ;
+       :alunoId "A32648" ;
+       :alunoNome "DANIEL FILIPE PERES FERREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33152
+:A33152 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-10-12" ;
+       :alunoId "A33152" ;
+       :alunoNome "DANIEL RICARDO DE CASTRO MENDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38211
+:A38211 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-8-16" ;
+       :alunoId "A38211" ;
+       :alunoNome "DANIEL TORRES GONCALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38210
+:A38210 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1998-7-10" ;
+       :alunoId "A38210" ;
+       :alunoNome "DANIELA CRISTINA GARCIA TEIXEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A22854
+:A22854 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1999-3-10" ;
+       :alunoId "A22854" ;
+       :alunoNome "DAVI CARNEIRO PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35293
+:A35293 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-11-22" ;
+       :alunoId "A35293" ;
+       :alunoNome "DAVID DANIEL CARDOSO DE OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35294
+:A35294 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1996-11-20" ;
+       :alunoId "A35294" ;
+       :alunoNome "DIAMANTINO JOSE MADEIRA ABOBELEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38166
+:A38166 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2000-6-26" ;
+       :alunoId "A38166" ;
+       :alunoNome "DIOGO FILIPE DA SILVA CARDOSO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38164
+:A38164 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-8-28" ;
+       :alunoId "A38164" ;
+       :alunoNome "DIOGO PAULO DA FONTE LAPA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38167
+:A38167 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-7-20" ;
+       :alunoId "A38167" ;
+       :alunoNome "DUARTE ALEXANDRE DA CUNHA ALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33155
+:A33155 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-4-2" ;
+       :alunoId "A33155" ;
+       :alunoNome "DUARTE FILIPE AFONSO CHAVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35298
+:A35298 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-5-10" ;
+       :alunoId "A35298" ;
+       :alunoNome "DUARTE NUNO MALHEIRO DE BARREIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38190
+:A38190 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-3-14" ;
+       :alunoId "A38190" ;
+       :alunoNome "ELISEU CARNEIRO DOS SANTOS ROCHA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35300
+:A35300 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-2-15" ;
+       :alunoId "A35300" ;
+       :alunoNome "EMANUEL CERDEIRA MESQUITA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30305
+:A30305 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-4-15" ;
+       :alunoId "A30305" ;
+       :alunoNome "EMANUEL JOSE ANTUNES FERNANDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36757
+:A36757 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-6-6" ;
+       :alunoId "A36757" ;
+       :alunoNome "ERNESTO MANUEL DA SILVA LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33157
+:A33157 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-1-23" ;
+       :alunoId "A33157" ;
+       :alunoNome "EURICO MANUEL FOLGADO AFONSO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27608
+:A27608 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-5-12" ;
+       :alunoId "A27608" ;
+       :alunoNome "EURICO MANUEL TELES MORAIS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35302
+:A35302 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1996-8-19" ;
+       :alunoId "A35302" ;
+       :alunoNome "FABIO ROBERTO LEITE MATOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33158
+:A33158 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-1-11" ;
+       :alunoId "A33158" ;
+       :alunoNome "FAUSTO MIGUEL PACHECO FARIA VIANA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35465
+:A35465 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-2-21" ;
+       :alunoId "A35465" ;
+       :alunoNome "FERNANDO ANTONIO ALVES LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33858
+:A33858 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-7-13" ;
+       :alunoId "A33858" ;
+       :alunoNome "FERNANDO JORGE PINTO LIMA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A26737
+:A26737 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-7-26" ;
+       :alunoId "A26737" ;
+       :alunoNome "FERNANDO MIGUEL SOUSA LISBOA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30187
+:A30187 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-1-26" ;
+       :alunoId "A30187" ;
+       :alunoNome "FERNANDO SERGIO MADALENO PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35303
+:A35303 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-5-8" ;
+       :alunoId "A35303" ;
+       :alunoNome "FILIPE ANTONIO GONCALVES DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36445
+:A36445 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-9-25" ;
+       :alunoId "A36445" ;
+       :alunoNome "FILIPE BARROSO DE OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38595
+:A38595 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-4-2" ;
+       :alunoId "A38595" ;
+       :alunoNome "FILIPE GONCALO GONCALVES DA COSTA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38187
+:A38187 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-6-19" ;
+       :alunoId "A38187" ;
+       :alunoNome "FLAVIO MIGUEL XAVIER FERREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36424
+:A36424 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "2001-5-14" ;
+       :alunoId "A36424" ;
+       :alunoNome "FRANCISCO EURICO PINTO CORTEZ MARTINS LEITE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35308
+:A35308 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-6-2" ;
+       :alunoId "A35308" ;
+       :alunoNome "FRANCISCO JOSE MAIO LEITE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35443
+:A35443 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-4-6" ;
+       :alunoId "A35443" ;
+       :alunoNome "FRANCISCO JOSE MARTINS GOMES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27616
+:A27616 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-7-3" ;
+       :alunoId "A27616" ;
+       :alunoNome "FRANCISCO JOSE PRATA DA PAZ" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38163
+:A38163 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1996-4-23" ;
+       :alunoId "A38163" ;
+       :alunoNome "GASPAR AUGUSTO SIMOES CORREIA VIEIRA LEITE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39288
+:A39288 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-2-22" ;
+       :alunoId "A39288" ;
+       :alunoNome "GENILDO SOARES NEVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33162
+:A33162 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-3-25" ;
+       :alunoId "A33162" ;
+       :alunoNome "GONCALO LEAL MACHADO RIBEIRO PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35311
+:A35311 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-3-5" ;
+       :alunoId "A35311" ;
+       :alunoNome "GONCALO LUIS MALHEIRO DE OLIVEIRA NOVAIS MACHADO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39508
+:A39508 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-8-15" ;
+       :alunoId "A39508" ;
+       :alunoNome "GONCALO MANUEL CORREIA CALHEIROS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33163
+:A33163 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-4-6" ;
+       :alunoId "A33163" ;
+       :alunoNome "GONCALO PAULO CUNHA CARDOSO FERREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38174
+:A38174 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-12-14" ;
+       :alunoId "A38174" ;
+       :alunoNome "GUILHERME REIS BARBOSA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33165
+:A33165 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-7-5" ;
+       :alunoId "A33165" ;
+       :alunoNome "HELDER ARTUR PEIXOTO MAGALHAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35312
+:A35312 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-4-11" ;
+       :alunoId "A35312" ;
+       :alunoNome "HELDER FILIPE DE CASTRO MARQUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38185
+:A38185 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-6-21" ;
+       :alunoId "A38185" ;
+       :alunoNome "HELDER JOSE FERREIRA BARBOSA RIBEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39503
+:A39503 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-3-4" ;
+       :alunoId "A39503" ;
+       :alunoNome "HELDER NUNO MARTINS DO VALE TOME" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36758
+:A36758 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-4-20" ;
+       :alunoId "A36758" ;
+       :alunoNome "HUGO ALEXANDRE PEREIRA TRIUNFANTE MARTINS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38197
+:A38197 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-8-6" ;
+       :alunoId "A38197" ;
+       :alunoNome "HUGO ALEXANDRE SOBREIRO DE SEIXAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33272
+:A33272 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1998-2-21" ;
+       :alunoId "A33272" ;
+       :alunoNome "HUGO ANDRE PEIXOTO FREITAS PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35315
+:A35315 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-1-28" ;
+       :alunoId "A35315" ;
+       :alunoNome "HUGO EMANUEL QUEIROS TEIXEIRA DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38202
+:A38202 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2000-4-4" ;
+       :alunoId "A38202" ;
+       :alunoNome "HUGO FILIPE NASCIMENTO PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35316
+:A35316 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2001-2-21" ;
+       :alunoId "A35316" ;
+       :alunoNome "HUGO GUILHERME DOS SANTOS RIGOR" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35395
+:A35395 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1997-6-25" ;
+       :alunoId "A35395" ;
+       :alunoNome "HUGO JOSE FERNANDES CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38204
+:A38204 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1997-10-2" ;
+       :alunoId "A38204" ;
+       :alunoNome "HUGO JOSE PEREIRA PACHECO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A26208
+:A26208 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1998-7-8" ;
+       :alunoId "A26208" ;
+       :alunoNome "IGOR MURILO DE ALMEIDA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33703
+:A33703 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1996-10-28" ;
+       :alunoId "A33703" ;
+       :alunoNome "ISABEL MARIA ROSENDO CARDOSO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38134
+:A38134 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-6-10" ;
+       :alunoId "A38134" ;
+       :alunoNome "IVO MANUEL DANTAS MONTEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35318
+:A35318 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-4-25" ;
+       :alunoId "A35318" ;
+       :alunoNome "JASON PETER COSTA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33168
+:A33168 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2000-10-13" ;
+       :alunoId "A33168" ;
+       :alunoNome "JOANA SOUTO DE MIRANDA GONZALEZ" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35319
+:A35319 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2004-6-12" ;
+       :alunoId "A35319" ;
+       :alunoNome "JOAO ALEXANDRE VAZ OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35320
+:A35320 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "2001-2-9" ;
+       :alunoId "A35320" ;
+       :alunoNome "JOAO ANTONIO LAVRADOR VILANOVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A32753
+:A32753 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1998-11-26" ;
+       :alunoId "A32753" ;
+       :alunoNome "JOAO ARNALDO FREITAS DE ABREU" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38180
+:A38180 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-11-9" ;
+       :alunoId "A38180" ;
+       :alunoNome "JOAO CARLOS AZEVEDO SALGADO GUIMARAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35321
+:A35321 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1996-3-27" ;
+       :alunoId "A35321" ;
+       :alunoNome "JOAO FILIPE FONTES MACHADO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35322
+:A35322 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-5-17" ;
+       :alunoId "A35322" ;
+       :alunoNome "JOAO GILBERTO LAMARAO DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38133
+:A38133 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1998-3-7" ;
+       :alunoId "A38133" ;
+       :alunoNome "JOAO GONCALO BOTICA RIBEIRO DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30201
+:A30201 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-3-5" ;
+       :alunoId "A30201" ;
+       :alunoNome "JOAO GUILHERME RABACA CAMPOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38123
+:A38123 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1998-7-26" ;
+       :alunoId "A38123" ;
+       :alunoNome "JOAO MANUEL DA SILVA SANCHES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A34935
+:A34935 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-2-17" ;
+       :alunoId "A34935" ;
+       :alunoNome "JOAO MANUEL DE CAMPOS GONCALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35323
+:A35323 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1998-1-16" ;
+       :alunoId "A35323" ;
+       :alunoNome "JOAO MARIO MENDES DE OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33172
+:A33172 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-2-11" ;
+       :alunoId "A33172" ;
+       :alunoNome "JOAO MIGUEL RAPOSO DA SILVA MARQUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38191
+:A38191 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-3-21" ;
+       :alunoId "A38191" ;
+       :alunoNome "JOAO MIGUEL RODRIGUES BATISTA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38186
+:A38186 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-5-3" ;
+       :alunoId "A38186" ;
+       :alunoNome "JOAO NUNO MARQUES DOS SANTOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39750
+:A39750 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1997-3-5" ;
+       :alunoId "A39750" ;
+       :alunoNome "JOAO PAULO BARBOSA OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A22662
+:A22662 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-10-12" ;
+       :alunoId "A22662" ;
+       :alunoNome "JOAO PAULO CARRAPATO ALMEIDA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35325
+:A35325 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2004-9-25" ;
+       :alunoId "A35325" ;
+       :alunoNome "JOAO PAULO COELHO GOMES TEIXEIRA E OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A17855
+:A17855 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2004-9-1" ;
+       :alunoId "A17855" ;
+       :alunoNome "JOAO PAULO DA SILVA CASTRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38175
+:A38175 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2001-5-26" ;
+       :alunoId "A38175" ;
+       :alunoNome "JOAO PAULO DA SILVA GOMES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33173
+:A33173 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-1-2" ;
+       :alunoId "A33173" ;
+       :alunoNome "JOAO PAULO MINHAVA PEIXOTO ASSIS CARDOSO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39622
+:A39622 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-1-6" ;
+       :alunoId "A39622" ;
+       :alunoNome "JOAO PAULO SILVA DE VASCONCELOS GUSMAO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33175
+:A33175 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-10-25" ;
+       :alunoId "A33175" ;
+       :alunoNome "JOAO PEDRO BACAO COELHO DE BARROS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A18938
+:A18938 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-10-28" ;
+       :alunoId "A18938" ;
+       :alunoNome "JOAO PEDRO BRITO ANTUNES GUIMARAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33176
+:A33176 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2004-6-26" ;
+       :alunoId "A33176" ;
+       :alunoNome "JOAO PEDRO GOMES FERNANDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35832
+:A35832 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-5-1" ;
+       :alunoId "A35832" ;
+       :alunoNome "JOAO PEDRO GONCALVES DE CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38170
+:A38170 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-4-19" ;
+       :alunoId "A38170" ;
+       :alunoNome "JOAO PEDRO OLIVEIRA PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36425
+:A36425 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-6-6" ;
+       :alunoId "A36425" ;
+       :alunoNome "JOAO PEDRO ROBALO ESPINHO PEREIRA DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38212
+:A38212 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1998-5-3" ;
+       :alunoId "A38212" ;
+       :alunoNome "JOAO PEDRO SILVA ARAUJO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38220
+:A38220 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-11-4" ;
+       :alunoId "A38220" ;
+       :alunoNome "JOAO RAFAEL FERREIRA VELOSO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38199
+:A38199 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-3-26" ;
+       :alunoId "A38199" ;
+       :alunoNome "JOAO RICARDO DA SILVA CAMPOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38198
+:A38198 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-10-15" ;
+       :alunoId "A38198" ;
+       :alunoNome "JOAQUIM MACHADO GONCALVES SAMPAIO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35328
+:A35328 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1997-4-17" ;
+       :alunoId "A35328" ;
+       :alunoNome "JOEL ARAUJO ROCHA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38157
+:A38157 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-7-15" ;
+       :alunoId "A38157" ;
+       :alunoNome "JOEL HUMBERTO DA SILVA BEIRAO DO VALE CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A20464
+:A20464 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-3-22" ;
+       :alunoId "A20464" ;
+       :alunoNome "JOEL TITO DA CRUZ PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38139
+:A38139 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1997-4-7" ;
+       :alunoId "A38139" ;
+       :alunoNome "JORGE ALBERTO FARIA MIRANDA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35330
+:A35330 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-8-24" ;
+       :alunoId "A35330" ;
+       :alunoNome "JORGE ANDRE ALVES DE MELO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A16409
+:A16409 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-2-18" ;
+       :alunoId "A16409" ;
+       :alunoNome "JORGE MANUEL DE CASTRO MAIO GOMES DA COSTA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33709
+:A33709 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-8-2" ;
+       :alunoId "A33709" ;
+       :alunoNome "JORGE MANUEL VIANA RIBEIRO MARTINS FORTE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30209
+:A30209 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1997-4-26" ;
+       :alunoId "A30209" ;
+       :alunoNome "JORGE MIGUEL GONCALVES DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A21008
+:A21008 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1998-6-11" ;
+       :alunoId "A21008" ;
+       :alunoNome "JORGE MIGUEL SILVA MELO PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35331
+:A35331 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-3-20" ;
+       :alunoId "A35331" ;
+       :alunoNome "JOSE ALEXANDRE DE CARVALHO AMORIM" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38189
+:A38189 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1998-8-3" ;
+       :alunoId "A38189" ;
+       :alunoNome "JOSE ANTONIO DA CUNHA E SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A19705
+:A19705 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-1-12" ;
+       :alunoId "A19705" ;
+       :alunoNome "JOSE ANTONIO PEREIRA CIBRAO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30211
+:A30211 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-6-3" ;
+       :alunoId "A30211" ;
+       :alunoNome "JOSE CARLOS CARVALHO DOS SANTOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30212
+:A30212 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-4-6" ;
+       :alunoId "A30212" ;
+       :alunoNome "JOSE CARLOS DA ROCHA MACHADO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36960
+:A36960 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-9-13" ;
+       :alunoId "A36960" ;
+       :alunoNome "JOSE CARLOS DE FREITAS FONTAO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A34434
+:A34434 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-7-1" ;
+       :alunoId "A34434" ;
+       :alunoNome "JOSE CARLOS MARQUES DIAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35332
+:A35332 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-11-5" ;
+       :alunoId "A35332" ;
+       :alunoNome "JOSE DIOGO RIBEIRO LIZ DE ALMEIDA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39506
+:A39506 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-6-1" ;
+       :alunoId "A39506" ;
+       :alunoNome "JOSE EDUARDO CORREIA CALHEIROS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36761
+:A36761 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "2001-12-11" ;
+       :alunoId "A36761" ;
+       :alunoNome "JOSE EDUARDO TEIXEIRA RITO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38224
+:A38224 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-2-12" ;
+       :alunoId "A38224" ;
+       :alunoNome "JOSE FILIPE HENRIQUES VILAS BOAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35333
+:A35333 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-11-9" ;
+       :alunoId "A35333" ;
+       :alunoNome "JOSE FILIPE QUEIJO FERNANDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A23916
+:A23916 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1997-9-4" ;
+       :alunoId "A23916" ;
+       :alunoNome "JOSE GRACA DA NOBREGA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38222
+:A38222 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-8-4" ;
+       :alunoId "A38222" ;
+       :alunoNome "JOSE LUIS CARDOSO SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38205
+:A38205 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-2-19" ;
+       :alunoId "A38205" ;
+       :alunoNome "JOSE LUIS LOPES DE ARAUJO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27629
+:A27629 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-8-25" ;
+       :alunoId "A27629" ;
+       :alunoNome "JOSE LUIS PINTO MONTEIRO ALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38206
+:A38206 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-4-11" ;
+       :alunoId "A38206" ;
+       :alunoNome "JOSE MANUEL ARAUJO SOARES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35398
+:A35398 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-10-19" ;
+       :alunoId "A35398" ;
+       :alunoNome "JOSE MANUEL ESTEVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A32480
+:A32480 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-5-10" ;
+       :alunoId "A32480" ;
+       :alunoNome "JOSE MANUEL LIMA GANDARELA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30213
+:A30213 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-1-4" ;
+       :alunoId "A30213" ;
+       :alunoNome "JOSE MANUEL LOUREIRO DE AZEVEDO TEIXEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A22670
+:A22670 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-10-28" ;
+       :alunoId "A22670" ;
+       :alunoNome "JOSE MANUEL TEIXEIRA FERNANDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33182
+:A33182 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-8-14" ;
+       :alunoId "A33182" ;
+       :alunoNome "JOSE MIGUEL DOS SANTOS FERRAZ" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A28722
+:A28722 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-10-26" ;
+       :alunoId "A28722" ;
+       :alunoNome "JOSE MIGUEL FERREIRA PONTES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38121
+:A38121 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-1-26" ;
+       :alunoId "A38121" ;
+       :alunoNome "JOSE MIGUEL RODRIGUES OLIVEIRA DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35334
+:A35334 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "2001-9-20" ;
+       :alunoId "A35334" ;
+       :alunoNome "JOSE MIGUEL SILVA PEIXOTO DE CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38136
+:A38136 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1998-6-7" ;
+       :alunoId "A38136" ;
+       :alunoNome "JOSE NUNO MARTINS PINTO FRAGA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35335
+:A35335 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1996-9-26" ;
+       :alunoId "A35335" ;
+       :alunoNome "JOSE PAULO CARNEIRO DE MELO MAMEDE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35337
+:A35337 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-12-11" ;
+       :alunoId "A35337" ;
+       :alunoNome "JOSE PEDRO DOMINGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38142
+:A38142 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1996-12-15" ;
+       :alunoId "A38142" ;
+       :alunoNome "JOSE PEDRO FARIA E VASCONCELOS CORREIA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38140
+:A38140 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-9-5" ;
+       :alunoId "A38140" ;
+       :alunoNome "JOSE PEDRO MACHADO GOMES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38137
+:A38137 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2000-2-23" ;
+       :alunoId "A38137" ;
+       :alunoNome "JOSE PEDRO RIBEIRO DA ARAUJO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38128
+:A38128 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-6-13" ;
+       :alunoId "A38128" ;
+       :alunoNome "JOSE PEDRO RODRIGUES MAGALHAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30214
+:A30214 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-3-15" ;
+       :alunoId "A30214" ;
+       :alunoNome "JOSE PEDRO SILVA DE OLIVEIRA CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A23508
+:A23508 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1998-4-7" ;
+       :alunoId "A23508" ;
+       :alunoNome "JOSE ROMEU FERNANDES PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38155
+:A38155 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1996-9-16" ;
+       :alunoId "A38155" ;
+       :alunoNome "JULIO ANDRE RODRIGUES ARAUJO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35843
+:A35843 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-3-9" ;
+       :alunoId "A35843" ;
+       :alunoNome "LARA SOFIA ALPOIM MIRANDA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38150
+:A38150 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-4-27" ;
+       :alunoId "A38150" ;
+       :alunoNome "LEANDRO EMANUEL DA SILVA SALGADO BARBOSA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A34035
+:A34035 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-2-27" ;
+       :alunoId "A34035" ;
+       :alunoNome "LEONOR ISABEL CONSTANTINO CAEIRO BOGA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A24839
+:A24839 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-12-16" ;
+       :alunoId "A24839" ;
+       :alunoNome "LEONOR ISABEL FERREIRA DE MELO OSORIO ARAUJO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35339
+:A35339 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-6-23" ;
+       :alunoId "A35339" ;
+       :alunoNome "LIDIA NOGUEIRA LARANJEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35340
+:A35340 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-2-22" ;
+       :alunoId "A35340" ;
+       :alunoNome "LILIANA SOLANGE SEQUEIRA HENRIQUES DE MACEDO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33650
+:A33650 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2000-7-24" ;
+       :alunoId "A33650" ;
+       :alunoNome "LUIS ANDRE DA CUNHA MARQUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35342
+:A35342 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-2-20" ;
+       :alunoId "A35342" ;
+       :alunoNome "LUIS CARLOS GONCALO LEONARDO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38223
+:A38223 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1998-8-13" ;
+       :alunoId "A38223" ;
+       :alunoNome "LUIS DIOGO MONTEIRO DUARTE COUTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39341
+:A39341 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-11-28" ;
+       :alunoId "A39341" ;
+       :alunoNome "LUIS FERNANDO ROMANEL RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39408
+:A39408 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2000-3-16" ;
+       :alunoId "A39408" ;
+       :alunoNome "LUIS FILIPE FARIA MONTEIRO CAPELO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33186
+:A33186 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-8-10" ;
+       :alunoId "A33186" ;
+       :alunoNome "LUIS FILIPE GAMA PAIS CABRAL" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38219
+:A38219 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-11-4" ;
+       :alunoId "A38219" ;
+       :alunoNome "LUIS FILIPE PEREIRA GONCALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A29631
+:A29631 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "2001-6-19" ;
+       :alunoId "A29631" ;
+       :alunoNome "LUIS FILIPE RIBEIRO NOVAIS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39747
+:A39747 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-5-19" ;
+       :alunoId "A39747" ;
+       :alunoNome "LUIS PEDRO FERREIRA LEITE DOS SANTOS ALEIXO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33188
+:A33188 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-3-12" ;
+       :alunoId "A33188" ;
+       :alunoNome "LUIS PEDRO LOPES PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38172
+:A38172 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2000-2-21" ;
+       :alunoId "A38172" ;
+       :alunoNome "LUIS TIAGO AFONSO MASCARENHAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38168
+:A38168 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-8-2" ;
+       :alunoId "A38168" ;
+       :alunoNome "LUIZ ALBERTO DE CASTRO SANTOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38254
+:A38254 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "2001-4-27" ;
+       :alunoId "A38254" ;
+       :alunoNome "MANUEL DOMINGOS DE CARVALHO FELGUEIRAS DA SILVA SANTOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30219
+:A30219 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2001-3-16" ;
+       :alunoId "A30219" ;
+       :alunoNome "MANUEL FERNANDO SOTO MAIOR FRANQUEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35348
+:A35348 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-2-24" ;
+       :alunoId "A35348" ;
+       :alunoNome "MANUEL JOSE GOMES MEIRELES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27637
+:A27637 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-12-22" ;
+       :alunoId "A27637" ;
+       :alunoNome "MANUEL JOSE TORRES SOUSA DA CUNHA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A29004
+:A29004 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1999-4-22" ;
+       :alunoId "A29004" ;
+       :alunoNome "MARANGAZE JOAQUIM MUNHEPE MULHANGA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35349
+:A35349 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1997-1-26" ;
+       :alunoId "A35349" ;
+       :alunoNome "MARCIA MARLENE DE ALMEIDA MARTINS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35350
+:A35350 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-11-20" ;
+       :alunoId "A35350" ;
+       :alunoNome "MARCIAL COELHO GOMES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39406
+:A39406 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-6-22" ;
+       :alunoId "A39406" ;
+       :alunoNome "MARCO ALEXANDRE AGUIAR VAZ" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A29011
+:A29011 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1998-12-22" ;
+       :alunoId "A29011" ;
+       :alunoNome "MARCO ALEXANDRE BARREIRA MEDEIROS TEIXEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38178
+:A38178 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1999-6-9" ;
+       :alunoId "A38178" ;
+       :alunoNome "MARCO ALEXANDRE TEIXEIRA PALOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38152
+:A38152 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-5-14" ;
+       :alunoId "A38152" ;
+       :alunoNome "MARCO ANTONIO SAMPAIO FREITAS DE CASTRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38179
+:A38179 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-11-13" ;
+       :alunoId "A38179" ;
+       :alunoNome "MARCO ANTONIO TEIXEIRA MARTINS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A22685
+:A22685 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-8-28" ;
+       :alunoId "A22685" ;
+       :alunoNome "MARCO FRANCISCO DA SILVA LIZARDO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A22688
+:A22688 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2001-4-3" ;
+       :alunoId "A22688" ;
+       :alunoNome "MARCO RICARDO BARBOSA COELHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36864
+:A36864 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-7-19" ;
+       :alunoId "A36864" ;
+       :alunoNome "MARIA BEATRIZ ALVES DE SA CAMPOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38184
+:A38184 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-10-1" ;
+       :alunoId "A38184" ;
+       :alunoNome "MARIA CRISTINA CARNEIRO BARREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A12753
+:A12753 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1998-3-8" ;
+       :alunoId "A12753" ;
+       :alunoNome "MARIA LUISA VILLAVERDE MACHADO FERNANDES NOVAIS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38161
+:A38161 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-6-24" ;
+       :alunoId "A38161" ;
+       :alunoNome "MARIANA PEREIRA NEVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38171
+:A38171 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-12-22" ;
+       :alunoId "A38171" ;
+       :alunoNome "MARIO ANDRE PATRICIO TEIXEIRA JULIO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38194
+:A38194 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1999-7-23" ;
+       :alunoId "A38194" ;
+       :alunoNome "MARIO DA FONTE LAMEIRAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A23544
+:A23544 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2000-3-12" ;
+       :alunoId "A23544" ;
+       :alunoNome "MARIO RUI ANUNCIACAO MONTEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A29048
+:A29048 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1996-2-14" ;
+       :alunoId "A29048" ;
+       :alunoNome "MARIO RUI RIBEIRO FIALHO DA CONCEICAO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36454
+:A36454 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-4-17" ;
+       :alunoId "A36454" ;
+       :alunoNome "MICHEL FERREIRA PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35352
+:A35352 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2001-4-14" ;
+       :alunoId "A35352" ;
+       :alunoNome "MIGUEL AFONSO PIRES DA ROSA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38217
+:A38217 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-4-13" ;
+       :alunoId "A38217" ;
+       :alunoNome "MIGUEL ANGELO MARQUES DE MATOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38209
+:A38209 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-9-24" ;
+       :alunoId "A38209" ;
+       :alunoNome "MIGUEL ANGELO PINTO MARQUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30226
+:A30226 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-3-12" ;
+       :alunoId "A30226" ;
+       :alunoNome "MIGUEL ANGELO RIBEIRO DE SOUSA E SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38221
+:A38221 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1996-2-13" ;
+       :alunoId "A38221" ;
+       :alunoNome "MIGUEL ANGELO VIVAS GOMES ALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A21432
+:A21432 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-12-14" ;
+       :alunoId "A21432" ;
+       :alunoNome "MIGUEL MANUEL GOMES RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39342
+:A39342 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-11-27" ;
+       :alunoId "A39342" ;
+       :alunoNome "MIGUEL PEDRO AMARAL FIGUEIREDO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A32608
+:A32608 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2000-7-17" ;
+       :alunoId "A32608" ;
+       :alunoNome "MIGUEL PEDRO DE ALMEIDA FERREIRA CORREIA DOURADO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33195
+:A33195 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-10-18" ;
+       :alunoId "A33195" ;
+       :alunoNome "MIGUEL PINTO DE SOUSA MARQUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A22695
+:A22695 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2004-6-23" ;
+       :alunoId "A22695" ;
+       :alunoNome "NANCY DO SAMEIRO SILVERIO LAVANDEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38216
+:A38216 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-4-19" ;
+       :alunoId "A38216" ;
+       :alunoNome "NELSON DE SOUSA E SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33196
+:A33196 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2004-5-24" ;
+       :alunoId "A33196" ;
+       :alunoNome "NELSON FILIPE COELHO DE MOURA SOUSA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33420
+:A33420 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2000-11-19" ;
+       :alunoId "A33420" ;
+       :alunoNome "NELSON LEANDRO BARBOSA CARNEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38195
+:A38195 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-10-12" ;
+       :alunoId "A38195" ;
+       :alunoNome "NELSON TAVARES CUNHA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33727
+:A33727 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-5-13" ;
+       :alunoId "A33727" ;
+       :alunoNome "NUNO FILIPE ANTUNES DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33127
+:A33127 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-10-16" ;
+       :alunoId "A33127" ;
+       :alunoNome "NUNO FILIPE MAGALHAES SANTOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A24784
+:A24784 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-12-9" ;
+       :alunoId "A24784" ;
+       :alunoNome "NUNO FILIPE MARQUES MOREIRA RIBEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38208
+:A38208 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-8-27" ;
+       :alunoId "A38208" ;
+       :alunoNome "NUNO GONCALO BETTENCOURT DA CRUZ CORREIA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38203
+:A38203 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-6-23" ;
+       :alunoId "A38203" ;
+       :alunoNome "NUNO JORGE FERREIRA GUIMARAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A15619
+:A15619 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-5-18" ;
+       :alunoId "A15619" ;
+       :alunoNome "NUNO MIGUEL AFONSO CARVALHO DE MOURA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35355
+:A35355 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1998-5-8" ;
+       :alunoId "A35355" ;
+       :alunoNome "NUNO MIGUEL MACHADO ALVES COSTA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33437
+:A33437 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2000-10-3" ;
+       :alunoId "A33437" ;
+       :alunoNome "NUNO MIGUEL MARQUES GOMES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A22701
+:A22701 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-1-17" ;
+       :alunoId "A22701" ;
+       :alunoNome "NUNO MIGUEL MARTINS CASANOVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27645
+:A27645 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1997-7-13" ;
+       :alunoId "A27645" ;
+       :alunoNome "NUNO MIGUEL OLIVEIRA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A29282
+:A29282 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1999-11-1" ;
+       :alunoId "A29282" ;
+       :alunoNome "NUNO VIRIATO MACEDO FERREIRA DE CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38120
+:A38120 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2004-10-17" ;
+       :alunoId "A38120" ;
+       :alunoNome "OCTAVIO DAVID DA CONCEICAO JACINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A14539
+:A14539 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2000-10-6" ;
+       :alunoId "A14539" ;
+       :alunoNome "ORLANDO JORGE GONCALVES PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33280
+:A33280 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "2001-2-7" ;
+       :alunoId "A33280" ;
+       :alunoNome "PAULO BRUNO DA SILVA VIDES FERNANDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A34508
+:A34508 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-9-6" ;
+       :alunoId "A34508" ;
+       :alunoNome "PAULO CESAR ALMEIDA DE SA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27577
+:A27577 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1996-7-18" ;
+       :alunoId "A27577" ;
+       :alunoNome "PAULO CESAR DE CARVALHO LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39938
+:A39938 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-11-15" ;
+       :alunoId "A39938" ;
+       :alunoNome "PAULO CESAR ROMANEL RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33204
+:A33204 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-2-23" ;
+       :alunoId "A33204" ;
+       :alunoNome "PAULO EDUARDO MIRANDA CAMPOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38122
+:A38122 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-10-10" ;
+       :alunoId "A38122" ;
+       :alunoNome "PAULO JORGE ASSIS DE SOUSA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35357
+:A35357 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-5-18" ;
+       :alunoId "A35357" ;
+       :alunoNome "PAULO JORGE FERNANDES DE SOUSA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30238
+:A30238 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-11-21" ;
+       :alunoId "A30238" ;
+       :alunoNome "PAULO JORGE SOARES MENDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39407
+:A39407 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-12-24" ;
+       :alunoId "A39407" ;
+       :alunoNome "PAULO MANUEL RIBEIRO NOVAIS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33209
+:A33209 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "2001-8-7" ;
+       :alunoId "A33209" ;
+       :alunoNome "PAULO MIGUEL SA MORAIS PIRES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36476
+:A36476 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1998-10-27" ;
+       :alunoId "A36476" ;
+       :alunoNome "PEDRO ALEXANDRE FERREIRA VILACA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35360
+:A35360 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2001-9-24" ;
+       :alunoId "A35360" ;
+       :alunoNome "PEDRO DANIEL FERREIRA DE CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A21711
+:A21711 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-9-27" ;
+       :alunoId "A21711" ;
+       :alunoNome "PEDRO DAVID ALVES MARTINHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A32652
+:A32652 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2005-9-18" ;
+       :alunoId "A32652" ;
+       :alunoNome "PEDRO DUARTE CARDOSO LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36969
+:A36969 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-6-16" ;
+       :alunoId "A36969" ;
+       :alunoNome "PEDRO EMANUEL FERNANDES LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33213
+:A33213 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-4-14" ;
+       :alunoId "A33213" ;
+       :alunoNome "PEDRO GUIMARAES DE FREITAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30241
+:A30241 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1999-6-1" ;
+       :alunoId "A30241" ;
+       :alunoNome "PEDRO HENRIQUE GONCALVES GERAZ RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33214
+:A33214 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1996-10-6" ;
+       :alunoId "A33214" ;
+       :alunoNome "PEDRO JORGE OSORIO MARINHO OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38116
+:A38116 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-3-11" ;
+       :alunoId "A38116" ;
+       :alunoNome "PEDRO JOSE MARTINS FARIA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35144
+:A35144 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1997-8-25" ;
+       :alunoId "A35144" ;
+       :alunoNome "PEDRO MANUEL DE AMORIM MAGALHAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38118
+:A38118 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2000-9-21" ;
+       :alunoId "A38118" ;
+       :alunoNome "PEDRO MANUEL LOPES PATRICIO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27658
+:A27658 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS3 ;
+       :tocaInstrumento :Corne_Inglês ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-1-20" ;
+       :alunoId "A27658" ;
+       :alunoNome "PEDRO MIGUEL ARAUJO MOTA LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38159
+:A38159 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-6-21" ;
+       :alunoId "A38159" ;
+       :alunoNome "PEDRO MIGUEL AZEVEDO DE OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35363
+:A35363 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1998-2-14" ;
+       :alunoId "A35363" ;
+       :alunoNome "PEDRO MIGUEL DA SILVA ARAUJO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A25383
+:A25383 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-3-8" ;
+       :alunoId "A25383" ;
+       :alunoNome "PEDRO MIGUEL MARTINS FERNANDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35364
+:A35364 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2000-8-16" ;
+       :alunoId "A35364" ;
+       :alunoNome "PEDRO MIGUEL MEIRA DAS NEVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33524
+:A33524 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2004-10-3" ;
+       :alunoId "A33524" ;
+       :alunoNome "PEDRO MIGUEL PAES MACHADO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35855
+:A35855 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-3-24" ;
+       :alunoId "A35855" ;
+       :alunoNome "PEDRO MIGUEL PINTO RIBEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38147
+:A38147 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1997-3-22" ;
+       :alunoId "A38147" ;
+       :alunoNome "PEDRO MIGUEL RAMOS MADEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33281
+:A33281 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2000-2-11" ;
+       :alunoId "A33281" ;
+       :alunoNome "PEDRO MIGUEL SOARES PINTO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30243
+:A30243 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB15 ;
+       :tocaInstrumento :Trombone ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-2-24" ;
+       :alunoId "A30243" ;
+       :alunoNome "PEDRO MIGUEL VEIGA DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38149
+:A38149 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-2-8" ;
+       :alunoId "A38149" ;
+       :alunoNome "PEDRO SILVESTRE MENESES MAGALHAES COELHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38160
+:A38160 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2002-3-7" ;
+       :alunoId "A38160" ;
+       :alunoNome "PEDRO TIAGO AMORIM DE BRITO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33082
+:A33082 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-4-27" ;
+       :alunoId "A33082" ;
+       :alunoNome "PEDRO TIAGO DIAS GONCALVES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38154
+:A38154 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1998-1-22" ;
+       :alunoId "A38154" ;
+       :alunoNome "RAFAEL DE CASTRO CARREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38158
+:A38158 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-7-1" ;
+       :alunoId "A38158" ;
+       :alunoNome "RAUL GRACIANO OLIVEIRA RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30015
+:A30015 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-10-17" ;
+       :alunoId "A30015" ;
+       :alunoNome "RENATO CESAR ALMEIDA FIGUEIREDO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39509
+:A39509 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1997-4-17" ;
+       :alunoId "A39509" ;
+       :alunoNome "RICARDO ANDRE RODRIGUES AFONSO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38153
+:A38153 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-2-22" ;
+       :alunoId "A38153" ;
+       :alunoNome "RICARDO ARAUJO CARVALHO VILACA MOREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38151
+:A38151 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-4-5" ;
+       :alunoId "A38151" ;
+       :alunoNome "RICARDO FERNANDO LIRA DE MESQUITA LACHADO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38129
+:A38129 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-10-8" ;
+       :alunoId "A38129" ;
+       :alunoNome "RICARDO GOMES DE FARIA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33222
+:A33222 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-7-10" ;
+       :alunoId "A33222" ;
+       :alunoNome "RICARDO JORGE ALMEIDA DE MAGALHAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38130
+:A38130 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-10-21" ;
+       :alunoId "A38130" ;
+       :alunoNome "RICARDO JORGE RODRIGUES SEPULVEDA MARQUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A34435
+:A34435 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1998-8-15" ;
+       :alunoId "A34435" ;
+       :alunoNome "RICARDO JOSE FERREIRA DIAS DE OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A19550
+:A19550 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1997-11-5" ;
+       :alunoId "A19550" ;
+       :alunoNome "RICARDO MANUEL RODRIGUES DE OLIVEIRA DIMAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35366
+:A35366 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-6-14" ;
+       :alunoId "A35366" ;
+       :alunoNome "RICARDO MANUEL VIANA MAGALHAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A22721
+:A22721 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-12-20" ;
+       :alunoId "A22721" ;
+       :alunoNome "RICARDO NUNO MOREIRA CASTILHO FERREIRA LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30254
+:A30254 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-2-27" ;
+       :alunoId "A30254" ;
+       :alunoNome "ROQUE MANUEL DE CARVALHO TEIXEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A18770
+:A18770 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-9-2" ;
+       :alunoId "A18770" ;
+       :alunoNome "ROSA ALEXANDRA AZEVEDO GUIMARAES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38141
+:A38141 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-10-20" ;
+       :alunoId "A38141" ;
+       :alunoNome "RUBEN FILIPE CARDOSO DA FONSECA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38200
+:A38200 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-12-14" ;
+       :alunoId "A38200" ;
+       :alunoNome "RUI ALEXANDRE SERRANO DE MOURA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36764
+:A36764 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-12-8" ;
+       :alunoId "A36764" ;
+       :alunoNome "RUI ANDRE FERREIRA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38135
+:A38135 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1997-10-2" ;
+       :alunoId "A38135" ;
+       :alunoNome "RUI ANDRE LEITE RIBEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39944
+:A39944 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2000-5-25" ;
+       :alunoId "A39944" ;
+       :alunoNome "RUI ANTONIO PEIXOTO DE ABREU" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38148
+:A38148 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-4-27" ;
+       :alunoId "A38148" ;
+       :alunoNome "RUI DOMINGOS GUIMARAES SALGADO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33228
+:A33228 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1996-6-20" ;
+       :alunoId "A33228" ;
+       :alunoNome "RUI FILIPE BARROS TAVARES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38146
+:A38146 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1999-6-8" ;
+       :alunoId "A38146" ;
+       :alunoNome "RUI FILIPE TORRES ALEXANDRE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38908
+:A38908 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-5-7" ;
+       :alunoId "A38908" ;
+       :alunoNome "RUI JORGE DE OLIVEIRA PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35371
+:A35371 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1999-7-7" ;
+       :alunoId "A35371" ;
+       :alunoNome "RUI JORGE GUIMARAES MACHADO RODRIGUES VALENTE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A24875
+:A24875 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-11-23" ;
+       :alunoId "A24875" ;
+       :alunoNome "RUI MANUEL COUTO DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A37029
+:A37029 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1996-12-16" ;
+       :alunoId "A37029" ;
+       :alunoNome "RUI MANUEL DA SILVA PEREIRA NEIVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33229
+:A33229 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2000-1-19" ;
+       :alunoId "A33229" ;
+       :alunoNome "RUI MANUEL SILVA OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38119
+:A38119 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-6-5" ;
+       :alunoId "A38119" ;
+       :alunoNome "RUI MIGUEL DA SILVA ABREU" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A24876
+:A24876 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "2000-4-19" ;
+       :alunoId "A24876" ;
+       :alunoNome "RUI MIGUEL ESCUDEIRO DA COSTA AGUIAR" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A29253
+:A29253 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1997-2-6" ;
+       :alunoId "A29253" ;
+       :alunoNome "RUI MIGUEL FERNANDES VARELA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A25868
+:A25868 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2001-5-10" ;
+       :alunoId "A25868" ;
+       :alunoNome "RUI MIGUEL MORAIS LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A28735
+:A28735 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-6-6" ;
+       :alunoId "A28735" ;
+       :alunoNome "RUI MIGUEL NOVAIS CASTRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27673
+:A27673 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-8-13" ;
+       :alunoId "A27673" ;
+       :alunoNome "RUI MIGUEL PEREIRA OLIVEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35372
+:A35372 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1997-12-7" ;
+       :alunoId "A35372" ;
+       :alunoNome "RUI PEDRO ANDIAS DUARTE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33234
+:A33234 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2000-10-15" ;
+       :alunoId "A33234" ;
+       :alunoNome "SANDRA MARIA OLIVEIRA CARVALHO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36765
+:A36765 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1997-4-18" ;
+       :alunoId "A36765" ;
+       :alunoNome "SANDRA MARIA TELES FEIO ALMEIDA FAZENDEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38173
+:A38173 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB11 ;
+       :tocaInstrumento :Orgão ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1997-12-1" ;
+       :alunoId "A38173" ;
+       :alunoNome "SEBASTIAO MONTEIRO SIMOES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38183
+:A38183 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1998-1-22" ;
+       :alunoId "A38183" ;
+       :alunoNome "SERGIO BRANCO AMORIM" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33235
+:A33235 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1997-10-25" ;
+       :alunoId "A33235" ;
+       :alunoNome "SERGIO DE ALMEIDA PAIVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39343
+:A39343 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS19 ;
+       :tocaInstrumento :Violoncelo ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-10-23" ;
+       :alunoId "A39343" ;
+       :alunoNome "SERGIO FELICIANO FERREIRA JACOME" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39410
+:A39410 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1996-5-26" ;
+       :alunoId "A39410" ;
+       :alunoNome "SERGIO FILIPE PEREIRA DA FELICIDADE" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35374
+:A35374 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB2 ;
+       :tocaInstrumento :Contrabaixo ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "2000-9-21" ;
+       :alunoId "A35374" ;
+       :alunoNome "SERGIO MANUEL PEREIRA BARREIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A24885
+:A24885 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB9 ;
+       :tocaInstrumento :Harpa ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-3-2" ;
+       :alunoId "A24885" ;
+       :alunoNome "SERGIO MANUEL RUIVO CARDOSO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38177
+:A38177 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-8-21" ;
+       :alunoId "A38177" ;
+       :alunoNome "SERGIO NUNO CLARO GOMES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35375
+:A35375 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS20 ;
+       :tocaInstrumento :Violino ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-5-25" ;
+       :alunoId "A35375" ;
+       :alunoNome "SERGIO RICARDO TEIXEIRA ANDIAS MIRANDA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38181
+:A38181 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-6-21" ;
+       :alunoId "A38181" ;
+       :alunoNome "SOFIA DA CONCEICAO ALVES MENDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33238
+:A33238 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS18 ;
+       :tocaInstrumento :Tuba ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-7-20" ;
+       :alunoId "A33238" ;
+       :alunoNome "SONIA ANDREA GARRIDO DE SA EIRAS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35376
+:A35376 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "1997-3-23" ;
+       :alunoId "A35376" ;
+       :alunoNome "TELMA DE FATIMA PIRES DE SA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38131
+:A38131 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2004-4-15" ;
+       :alunoId "A38131" ;
+       :alunoNome "TIAGO DANIEL CERQUEIRA BOTELHO DA SILVA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33240
+:A33240 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1997-4-9" ;
+       :alunoId "A33240" ;
+       :alunoNome "TIAGO JORGE GOMES DA SILVA ARAUJO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38144
+:A38144 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1999-12-24" ;
+       :alunoId "A38144" ;
+       :alunoNome "TIAGO LEANDRO DE CASTRO RIBEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38145
+:A38145 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS12 ;
+       :tocaInstrumento :Percussão ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2003-12-8" ;
+       :alunoId "A38145" ;
+       :alunoNome "TIAGO MIGUEL SOARES FERNANDES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A29254
+:A29254 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2002-5-3" ;
+       :alunoId "A29254" ;
+       :alunoNome "TITO JOSE FERREIRA DE SOUSA LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35418
+:A35418 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "1997-7-11" ;
+       :alunoId "A35418" ;
+       :alunoNome "VALTER MIGUEL OLIVEIRA VILAR" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38127
+:A38127 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS5 ;
+       :tocaInstrumento :Fagote ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2003-11-21" ;
+       :alunoId "A38127" ;
+       :alunoNome "VANESSA ALZIRA ABRUNHOSA CARNEIRO DE CASTRO FIDALGO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33282
+:A33282 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB17 ;
+       :tocaInstrumento :Trompete ;
+       :alunoAnoCurso 2 ;
+       :alunoDataDeNascimento "2000-5-4" ;
+       :alunoId "A33282" ;
+       :alunoNome "VIRGILIO ABRANTES VINHA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A30266
+:A30266 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 7 ;
+       :alunoDataDeNascimento "2002-2-7" ;
+       :alunoId "A30266" ;
+       :alunoNome "VITOR CARLOS TEIXEIRA PIMENTEL" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35377
+:A35377 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1996-3-11" ;
+       :alunoId "A35377" ;
+       :alunoNome "VITOR DA COSTA PINHEIRO" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38192
+:A38192 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2005-12-4" ;
+       :alunoId "A38192" ;
+       :alunoNome "VITOR HUGO DA SILVA NOGUEIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A35378
+:A35378 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB16 ;
+       :tocaInstrumento :Trompa ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1998-3-23" ;
+       :alunoId "A35378" ;
+       :alunoNome "VITOR HUGO PEREIRA DA SILVA MOREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A38182
+:A38182 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 4 ;
+       :alunoDataDeNascimento "1998-5-2" ;
+       :alunoId "A38182" ;
+       :alunoNome "VITOR MANUEL ALVES DA ROCHA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A36773
+:A36773 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS22 ;
+       :tocaInstrumento :Bandolim ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2004-6-28" ;
+       :alunoId "A36773" ;
+       :alunoNome "VITOR MANUEL CARVALHO RODRIGUES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A39671
+:A39671 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB13 ;
+       :tocaInstrumento :Piano ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-8-9" ;
+       :alunoId "A39671" ;
+       :alunoNome "VITOR MANUEL PINTO LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27648
+:A27648 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB4 ;
+       :tocaInstrumento :Eufónio ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1996-12-24" ;
+       :alunoId "A27648" ;
+       :alunoNome "NUNO RAMOS MATOS" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A27620
+:A27620 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB21 ;
+       :tocaInstrumento :Viola_de_Arco ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1997-6-6" ;
+       :alunoId "A27620" ;
+       :alunoNome "JOAO ANDRE FARIA LOPES" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A33199
+:A33199 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB10 ;
+       :tocaInstrumento :Oboé ;
+       :alunoAnoCurso 1 ;
+       :alunoDataDeNascimento "1999-3-16" ;
+       :alunoId "A33199" ;
+       :alunoNome "NUNO FILIPE MENDES PEREIRA" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#AE-939
+:AE-939 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS1 ;
+       :tocaInstrumento :Clarinete ;
+       :alunoAnoCurso 6 ;
+       :alunoDataDeNascimento "2003-6-27" ;
+       :alunoId "AE-939" ;
+       :alunoNome "Jorge Gonzalez y Hurtado de Mendoza" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#AE-922
+:AE-922 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CS6 ;
+       :tocaInstrumento :Flauta ;
+       :alunoAnoCurso 8 ;
+       :alunoDataDeNascimento "2005-9-17" ;
+       :alunoId "AE-922" ;
+       :alunoNome "Brais Hernandez Facal" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#AE-907
+:AE-907 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB7 ;
+       :tocaInstrumento :Fliscorne ;
+       :alunoAnoCurso 3 ;
+       :alunoDataDeNascimento "2000-4-20" ;
+       :alunoId "AE-907" ;
+       :alunoNome "Oscar Lopez Garcia" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A4140
+:A4140 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB14 ;
+       :tocaInstrumento :Saxofone ;
+       :alunoAnoCurso 5 ;
+       :alunoDataDeNascimento "1967-02-01" ;
+       :alunoId "A4140" ;
+       :alunoNome "José Carlos Ramalho" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB1
+:CB1 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Clarinete ;
+     :cursoDesignacao "Curso Básico de Clarinete" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB1" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS23
+:CS23 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Clarinete ;
+     :cursoDesignacao "Curso Supletivo de Clarinete" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS23" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB2
+:CB2 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Contrabaixo ;
+     :cursoDesignacao "Curso Básico de Contrabaixo" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB2" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS24
+:CS24 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Contrabaixo ;
+     :cursoDesignacao "Curso Supletivo de Contrabaixo" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS24" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB3
+:CB3 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Corne_Inglês ;
+     :cursoDesignacao "Curso Básico de Corne Inglês" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB3" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS25
+:CS25 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Corne_Inglês ;
+     :cursoDesignacao "Curso Supletivo de Corne Inglês" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS25" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB4
+:CB4 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Eufónio ;
+     :cursoDesignacao "Curso Básico de Eufónio" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB4" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS26
+:CS26 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Eufónio ;
+     :cursoDesignacao "Curso Supletivo de Eufónio" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS26" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB5
+:CB5 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Fagote ;
+     :cursoDesignacao "Curso Básico de Fagote" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB5" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS27
+:CS27 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Fagote ;
+     :cursoDesignacao "Curso Supletivo de Fagote" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS27" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB6
+:CB6 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Flauta ;
+     :cursoDesignacao "Curso Básico de Flauta" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB6" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS28
+:CS28 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Flauta ;
+     :cursoDesignacao "Curso Supletivo de Flauta" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS28" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB7
+:CB7 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Fliscorne ;
+     :cursoDesignacao "Curso Básico de Fliscorne" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB7" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS29
+:CS29 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Fliscorne ;
+     :cursoDesignacao "Curso Supletivo de Fliscorne" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS29" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB8
+:CB8 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Guitarra ;
+     :cursoDesignacao "Curso Básico de Guitarra" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB8" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS30
+:CS30 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Guitarra ;
+     :cursoDesignacao "Curso Supletivo de Guitarra" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS30" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB9
+:CB9 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Harpa ;
+     :cursoDesignacao "Curso Básico de Harpa" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB9" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS31
+:CS31 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Harpa ;
+     :cursoDesignacao "Curso Supletivo de Harpa" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS31" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB10
+:CB10 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Oboé ;
+     :cursoDesignacao "Curso Básico de Oboé" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB10" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS32
+:CS32 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Oboé ;
+     :cursoDesignacao "Curso Supletivo de Oboé" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS32" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB11
+:CB11 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Orgão ;
+     :cursoDesignacao "Curso Básico de Orgão" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB11" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS33
+:CS33 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Orgão ;
+     :cursoDesignacao "Curso Supletivo de Orgão" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS33" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB12
+:CB12 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Percussão ;
+     :cursoDesignacao "Curso Básico de Percussão" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB12" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS34
+:CS34 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Percussão ;
+     :cursoDesignacao "Curso Supletivo de Percussão" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS34" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB13
+:CB13 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Piano ;
+     :cursoDesignacao "Curso Básico de Piano" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB13" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS35
+:CS35 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Piano ;
+     :cursoDesignacao "Curso Supletivo de Piano" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS35" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB14
+:CB14 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Saxofone ;
+     :cursoDesignacao "Curso Básico de Saxofone" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB14" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS36
+:CS36 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Saxofone ;
+     :cursoDesignacao "Curso Supletivo de Saxofone" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS36" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB15
+:CB15 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Trombone ;
+     :cursoDesignacao "Curso Básico de Trombone" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB15" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS37
+:CS37 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Trombone ;
+     :cursoDesignacao "Curso Supletivo de Trombone" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS37" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB16
+:CB16 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Trompa ;
+     :cursoDesignacao "Curso Básico de Trompa" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB16" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS38
+:CS38 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Trompa ;
+     :cursoDesignacao "Curso Supletivo de Trompa" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS38" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB17
+:CB17 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Trompete ;
+     :cursoDesignacao "Curso Básico de Trompete" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB17" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS39
+:CS39 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Trompete ;
+     :cursoDesignacao "Curso Supletivo de Trompete" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS39" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB18
+:CB18 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Tuba ;
+     :cursoDesignacao "Curso Básico de Tuba" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB18" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS40
+:CS40 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Tuba ;
+     :cursoDesignacao "Curso Supletivo de Tuba" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS40" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB19
+:CB19 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Violoncelo ;
+     :cursoDesignacao "Curso Básico de Violoncelo" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB19" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS41
+:CS41 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Violoncelo ;
+     :cursoDesignacao "Curso Supletivo de Violoncelo" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS41" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB20
+:CB20 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Violino ;
+     :cursoDesignacao "Curso Básico de Violino" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB20" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS42
+:CS42 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Violino ;
+     :cursoDesignacao "Curso Supletivo de Violino" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS42" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB21
+:CB21 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Viola_de_Arco ;
+     :cursoDesignacao "Curso Básico de Viola de Arco" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB21" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS43
+:CS43 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Viola_de_Arco ;
+     :cursoDesignacao "Curso Supletivo de Viola de Arco" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS43" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB22
+:CB22 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Bandolim ;
+     :cursoDesignacao "Curso Básico de Bandolim" ;
+     :cursoDuracao 5 ;
+     :cursoId "CB22" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CS44
+:CS44 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Bandolim ;
+     :cursoDesignacao "Curso Supletivo de Bandolim" ;
+     :cursoDuracao 3 ;
+     :cursoId "CS44" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Clarinete
+:Clarinete rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I1" ;
+          :instrumentoNome "Clarinete" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Contrabaixo
+:Contrabaixo rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I2" ;
+          :instrumentoNome "Contrabaixo" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Corne_Inglês
+:Corne_Inglês rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I3" ;
+          :instrumentoNome "Corne Inglês" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Eufónio
+:Eufónio rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I4" ;
+          :instrumentoNome "Eufónio" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Fagote
+:Fagote rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I5" ;
+          :instrumentoNome "Fagote" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Flauta
+:Flauta rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I6" ;
+          :instrumentoNome "Flauta" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Fliscorne
+:Fliscorne rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I7" ;
+          :instrumentoNome "Fliscorne" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Guitarra
+:Guitarra rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I8" ;
+          :instrumentoNome "Guitarra" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Harpa
+:Harpa rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I9" ;
+          :instrumentoNome "Harpa" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Oboé
+:Oboé rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I10" ;
+          :instrumentoNome "Oboé" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Orgão
+:Orgão rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I11" ;
+          :instrumentoNome "Orgão" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Percussão
+:Percussão rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I12" ;
+          :instrumentoNome "Percussão" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Piano
+:Piano rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I13" ;
+          :instrumentoNome "Piano" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Saxofone
+:Saxofone rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I14" ;
+          :instrumentoNome "Saxofone" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Trombone
+:Trombone rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I15" ;
+          :instrumentoNome "Trombone" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Trompa
+:Trompa rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I16" ;
+          :instrumentoNome "Trompa" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Trompete
+:Trompete rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I17" ;
+          :instrumentoNome "Trompete" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Tuba
+:Tuba rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I18" ;
+          :instrumentoNome "Tuba" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Violoncelo
+:Violoncelo rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I19" ;
+          :instrumentoNome "Violoncelo" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Violino
+:Violino rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I20" ;
+          :instrumentoNome "Violino" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Viola_de_Arco
+:Viola_de_Arco rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I21" ;
+          :instrumentoNome "Viola de Arco" .
+
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Bandolim
+:Bandolim rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I22" ;
+          :instrumentoNome "Bandolim" .
+
+
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Aluno
+                :Curso
+                :Instrumento
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+

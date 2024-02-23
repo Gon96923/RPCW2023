@@ -1,0 +1,156 @@
+@prefix : <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica/> .
+
+<https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#ensinaInstrumento
+:ensinaInstrumento rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Curso ;
+                   rdfs:range :Instrumento .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#noCurso
+:noCurso rdf:type owl:ObjectProperty ;
+         rdfs:domain :Aluno ;
+         rdfs:range :Curso .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#tocaInstrumento
+:tocaInstrumento rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Aluno ;
+                 rdfs:range :Instrumento .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#alunoAnoCurso
+:alunoAnoCurso rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Aluno ;
+               rdfs:range xsd:int .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#alunoDataDeNascimento
+:alunoDataDeNascimento rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Aluno ;
+                       rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#alunoId
+:alunoId rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Aluno ;
+         rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#alunoNome
+:alunoNome rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Aluno ;
+           rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#cursoDesignacao
+:cursoDesignacao rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Curso ;
+                 rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#cursoDuracao
+:cursoDuracao rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Curso ;
+              rdfs:range xsd:int .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#cursoId
+:cursoId rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Curso ;
+         rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#cursoInstrumento
+:cursoInstrumento rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Curso ;
+                  rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#instrumentoId
+:instrumentoId rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Instrumento ;
+               rdfs:range xsd:string .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#instrumentoNome
+:instrumentoNome rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Instrumento ;
+                 rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Aluno
+:Aluno rdf:type owl:Class .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Curso
+:Curso rdf:type owl:Class .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Instrumento
+:Instrumento rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#A1510
+:A1510 rdf:type owl:NamedIndividual ,
+                :Aluno ;
+       :noCurso :CB8 ;
+       :tocaInstrumento :Guitarra ;
+       :alunoAnoCurso "5"^^xsd:int ;
+       :alunoDataDeNascimento "1999-4-19" ;
+       :alunoId "A1510" ;
+       :alunoNome "ADEMAR FONTES DE MAGALHAES GONCALVES" .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#CB8
+:CB8 rdf:type owl:NamedIndividual ,
+              :Curso ;
+     :ensinaInstrumento :Guitarra ;
+     :cursoDesignacao "Curso Básico de Guitarra" ;
+     :cursoDuracao "5"^^xsd:int ;
+     :cursoId "CB8" .
+
+
+###  https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/escola_de_musica#Guitarra
+:Guitarra rdf:type owl:NamedIndividual ,
+                   :Instrumento ;
+          :instrumentoId "I8" ;
+          :instrumentoNome "Guitarra" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Aluno
+                :Curso
+                :Instrumento
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
