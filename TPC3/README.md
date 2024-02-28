@@ -1,5 +1,5 @@
 
- quais as cidades de um determinado distrito?
+- Quais as cidades de um determinado distrito?
 ```
 PREFIX : <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/mapa_virtual/>
 select ?s ?o where { 
@@ -8,7 +8,7 @@ select ?s ?o where {
 }
 ```
 
-- distribuição das cidades por distrito?
+- Distribuição das cidades por distrito?
 ```
 PREFIX : <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/mapa_virtual/>
 select ?distrito (count(distinct ?s) as ?n) where { 
@@ -18,7 +18,7 @@ group by(?distrito)
 order by(?n)
 ```
 
-- quantas cidades se podem atingir a partir do Porto?
+- Quantas cidades se podem atingir a partir do Porto?
 ```
 PREFIX : <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/mapa_virtual/>
 select (count(distinct ?s) as ?n) where { 
@@ -28,7 +28,7 @@ select (count(distinct ?s) as ?n) where {
 ```
 
 
-- quais as cidades com população acima de um determinado valor?
+- Quais as cidades com população acima de um determinado valor?
 ```
 PREFIX : <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/mapa_virtual/>
 select ?c ?nome ?pop where { 
