@@ -1,5 +1,5 @@
 
-- quais as cidades de um determinado distrito?
+ quais as cidades de um determinado distrito?
 ```
 PREFIX : <https://epl.di.uminho.pt/~jcr/AULAS/RPCW2024/datasets/2024/mapa_virtual/>
 select ?s ?o where { 
