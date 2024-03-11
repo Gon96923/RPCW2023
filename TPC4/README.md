@@ -5,7 +5,7 @@
 No decorrer da execução deste trabalho de casa foram cirados os seguintes ficheiros:
 - **app.py** : aplicação Flask que cria o servidor web e contém todas as queries necessárias para a invocação da páginas web.
 - **templates/index** : template html para criar a página web inicial.
-- **templates/empty** : template html para criar a página web inicial.
+- **templates/empty** : template html para criar uma página web vazia.
 - **templates/elementos** : template html para criar a página web contendo todos os elementos da Tabela Periódica.
 - **templates/elemento** : template html para criar a página web contendo a informção referente a um dado elemento.
 - **templates/grupos** : template html para criar a página web contendo todos os grupos da Tabela Periódica.
