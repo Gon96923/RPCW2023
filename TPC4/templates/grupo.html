@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>Tabela Periódica: Grupo</title>
+        <link rel="icon" href="{{url_for('static',filename='favicon.png')}}" type="image/x-icon"/>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/w3.css')}}"/>
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+                <h1>Tabela Grupo: {{data.nome}}</h1>
+            </header>
+
+            <div class="w3-container">
+                <p>
+                    Nome:  {% if data.dados[0].name %}{{data.dados[0].name.value}}{% else %} - {% endif %}
+                </p>
+                <p>
+                    Número: {% if data.dados[0].number %}{{data.dados[0].number.value}}{% else %} - {% endif %}
+                </p>                
+                <table class="w3-table-all">
+                    <header class="w3-container w3-blue">
+                        <h1>Elementos do Grupo</h1>
+                    </header>
+                    <tr>
+                        <th>Número</th>
+                        <th>Símbolo</th>
+                    </tr>
+                    {% for entry in data.dados %}
+                    <tr>
+                        <td>{{entry.ln.value}}</td>
+                        <td>{{entry.sim.value}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <footer class="w3-container w3-purple">
+                <h5>Gerado por RPCW2024</h5>
+            </footer>
+
+        </div>
+    </body>
+        
+</html>

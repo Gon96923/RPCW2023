@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>Tabela Periódica: Elemento</title>
+        <link rel="icon" href="{{url_for('static',filename='favicon.png')}}" type="image/x-icon"/>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/w3.css')}}"/>
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+                <h1>Tabela Elemento: {{data.nome}}</h1>
+            </header>
+
+            <div class="w3-container">
+                <p>
+                    Número atómico: {{ data.dados[0].n.value }}
+                </p>
+                <p>
+                    Nome: {{data.nome}}
+                </p>
+                <p>
+                    Símbolo: {{data.dados[0].simb.value}}
+                </p>
+                <p>
+                    Bloco: {% if data.dados[0].block %}{{data.dados[0].block.value.split('#')[1]}}{% else %} - {% endif %}
+                </p>
+                <p>
+                    Classificação: {% if data.dados[0].class %}{{data.dados[0].class.value.split('#')[1]}}{% else %} - {% endif %}
+                </p>
+                <p>
+                    Período: {% if data.dados[0].period %}{{data.dados[0].period.value.split('#')[1]}}{% else %} - {% endif %}
+                </p>
+                <p>
+                    Estado padrão: {% if data.dados[0].state %}{{data.dados[0].state.value.split('#')[1]}}{% else %} - {% endif %}
+                </p>
+                <p>
+                    Peso atómico: {% if data.dados[0].w %}{{data.dados[0].w.value}}{% else %} - {% endif %}
+                </p>
+                <p>
+                    Cor: {% if data.dados[0].color %}{{data.dados[0].color.value}}{% else %} - {% endif %}
+                </p>
+                <p>
+                    Grupo: {{data.dados[0].group.value.split('#')[1]}}
+                </p>
+            </div>
+            <footer class="w3-container w3-purple">
+                <h5>Gerado por RPCW2024</h5>
+            </footer>
+
+        </div>
+    </body>
+        
+</html>
