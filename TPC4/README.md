@@ -14,7 +14,7 @@ No decorrer da execução deste trablho de casa foram cirados os seguintes fiche
 ## Queries auxiliares
 
 Querie utilizada para descobrir os types dos elementos e preencher a página web da informação de cada elemnto.
-```
+```ruby
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX : <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
 select DISTINCT ?types where{
