@@ -23,7 +23,7 @@ select DISTINCT ?types where{
 ```
 
 Querie utilizada para descobrir os types dos elementos e preencher a página web da informação de cada grupo.
-```
+```ruby
 PREFIX : <http://www.daml.org/2003/01/periodictable/PeriodicTable#>
 select DISTINCT ?types where{
     ?s a :Group.
