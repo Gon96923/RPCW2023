@@ -1,0 +1,921 @@
+[
+    {
+        "uri": "http://dbpedia.org/resource/Ca-bau-kan",
+        "Titulo": "Ca-bau-kan",
+        "Duracao": "7200.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Niniek_L._Karim",
+            "http://dbpedia.org/resource/Ferry_Salim",
+            "http://dbpedia.org/resource/Lola_Amaria"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Nia_Dinata"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Nia_Dinata"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Andi_Rianto"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cab_Calloway's_Jitterbug_Party",
+        "Titulo": "Cab Calloway's Jitterbug Party",
+        "Duracao": "480.0",
+        "Tipo": "Curta metragem",
+        "Elenco": [
+            "http://dbpedia.org/resource/Cab_Calloway"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Fred_Waller"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Fred_Rath_(screenwriter)",
+            "http://dbpedia.org/resource/Milton_Hockey"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Cab_Calloway"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cab_No._13",
+        "Titulo": "Cab No. 13",
+        "Duracao": "4680.0",
+        "Elenco": [],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Michael_Curtiz"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Alfred_Schirokauer"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Willy_Schmidt-Gentner"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cab_Number_13",
+        "Titulo": "Cab Number 13",
+        "Duracao": "5400.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Vera_Carmi"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Mario_Mattoli",
+            "http://dbpedia.org/resource/Raoul_André"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/André_Hugon",
+            "http://dbpedia.org/resource/Xavier_de_Montépin"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Renzo_Rossellini_(composer)"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Caballerango",
+        "Titulo": "Caballerango",
+        "Duracao": "3720.0",
+        "Elenco": [],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Juan_Pablo_González"
+        ],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Caballo_prieto_azabache_(film)",
+        "Titulo": "Caballo prieto azabache (film)",
+        "Duracao": "5100.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Antonio_Aguilar",
+            "http://dbpedia.org/resource/Flor_Silvestre",
+            "http://dbpedia.org/resource/Jaime_Fernández_(actor)"
+        ],
+        "Realizadores": [],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabaret_(1972_film)",
+        "Titulo": "Cabaret (1972 film)",
+        "Duracao": "7440.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Helmut_Griem",
+            "http://dbpedia.org/resource/Fritz_Wepper",
+            "http://dbpedia.org/resource/Liza_Minnelli",
+            "http://dbpedia.org/resource/Joel_Grey",
+            "http://dbpedia.org/resource/Marisa_Berenson",
+            "http://dbpedia.org/resource/Michael_York"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Bob_Fosse"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Jay_Presson_Allen"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Fred_Ebb",
+            "http://dbpedia.org/resource/John_Kander",
+            "http://dbpedia.org/resource/Ralph_Burns"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabaret_Balkan",
+        "Titulo": "Cabaret Balkan",
+        "Duracao": "6120.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Bata_Živojinović",
+            "http://dbpedia.org/resource/Dragan_Nikolić",
+            "http://dbpedia.org/resource/Nebojša_Glogovac",
+            "http://dbpedia.org/resource/Bogdan_Diklić",
+            "http://dbpedia.org/resource/Mirjana_Karanović",
+            "http://dbpedia.org/resource/Miki_Manojlović",
+            "http://dbpedia.org/resource/Sergej_Trifunović"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Goran_Paskaljević"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Goran_Paskaljević",
+            "http://dbpedia.org/resource/Filip_David"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Zoran_Simjanović"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabaret_Neiges_Noires",
+        "Titulo": "Cabaret Neiges Noires",
+        "Duracao": "5820.0",
+        "Elenco": [],
+        "Realizadores": [],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabaret_Paradis",
+        "Titulo": "Cabaret Paradis",
+        "Duracao": "5880.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Riton_Liebman",
+            "http://dbpedia.org/resource/Michel_Vuillermoz",
+            "http://dbpedia.org/resource/Shirley_and_Dino",
+            "http://dbpedia.org/resource/Christian_Hecq",
+            "http://dbpedia.org/resource/Maaike_Jansen"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Shirley_and_Dino"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Shirley_and_Dino"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Gilles_Douieb"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabaret_Woman",
+        "Titulo": "Cabaret Woman",
+        "Duracao": "5820.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/José_María_Rodero",
+            "http://dbpedia.org/resource/Carmen_Sevilla"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Pedro_Lazaga"
+        ],
+        "Escritores": [],
+        "Músicos": [
+            "http://dbpedia.org/resource/Augusto_Algueró"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabascabo",
+        "Titulo": "Cabascabo",
+        "Duracao": "2700.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Oumarou_Ganda"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Oumarou_Ganda"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Oumarou_Ganda"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabeza_de_Vaca_(film)",
+        "Titulo": "Cabeza de Vaca (film)",
+        "Duracao": "6720.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Juan_Diego_(actor)",
+            "http://dbpedia.org/resource/Daniel_Giménez_Cacho",
+            "http://dbpedia.org/resource/Roberto_Sosa_(actor)",
+            "http://dbpedia.org/resource/Carlos_Castañón",
+            "http://dbpedia.org/resource/Gerardo_Villarreal"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Nicolás_Echevarría"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Álvar_Núñez_Cabeza_de_Vaca",
+            "http://dbpedia.org/resource/Guillermo_Sheridan"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabezas_cortadas",
+        "Titulo": "Cabezas cortadas",
+        "Duracao": "5640.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Francisco_Rabal",
+            "http://dbpedia.org/resource/Pierre_Clémenti"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Glauber_Rocha"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Glauber_Rocha"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabin_Boy",
+        "Titulo": "Cabin Boy",
+        "Duracao": "4800.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Ritch_Brinkley",
+            "http://dbpedia.org/resource/Brion_James",
+            "http://dbpedia.org/resource/James_Gammon",
+            "http://dbpedia.org/resource/Melora_Walters",
+            "http://dbpedia.org/resource/Chris_Elliott",
+            "http://dbpedia.org/resource/Brian_Doyle-Murray"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Adam_Resnick"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Chris_Elliott",
+            "http://dbpedia.org/resource/Adam_Resnick"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Steve_Bartek"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabin_Fever:_Patient_Zero",
+        "Titulo": "Cabin Fever: Patient Zero",
+        "Duracao": "5700.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Brando_Eaton",
+            "http://dbpedia.org/resource/Ryan_Donowho",
+            "http://dbpedia.org/resource/Lydia_Hearst",
+            "http://dbpedia.org/resource/Sean_Astin",
+            "http://dbpedia.org/resource/Jillian_Murray",
+            "http://dbpedia.org/resource/Mitch_Ryan"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Kaare_Andrews"
+        ],
+        "Escritores": [],
+        "Músicos": [
+            "http://dbpedia.org/resource/Kevin_Riepl"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabin_Fever_(2002_film)",
+        "Titulo": "Cabin Fever (2002 film)",
+        "Duracao": "5640.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Rider_Strong",
+            "http://dbpedia.org/resource/Giuseppe_Andrews",
+            "http://dbpedia.org/resource/Cerina_Vincent",
+            "http://dbpedia.org/resource/Arie_Verveen",
+            "http://dbpedia.org/resource/Joey_Kern",
+            "http://dbpedia.org/resource/Jordan_Ladd"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Eli_Roth"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Eli_Roth"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Nathan_Barr"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabin_Fever_(2016_film)",
+        "Titulo": "Cabin Fever (2016 film)",
+        "Duracao": "5880.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Matthew_Daddario",
+            "http://dbpedia.org/resource/Gage_Golightly",
+            "http://dbpedia.org/resource/Dustin_Ingram"
+        ],
+        "Realizadores": [],
+        "Escritores": [
+            "http://dbpedia.org/resource/Eli_Roth"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Kevin_Riepl"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabin_Fever_2:_Spring_Fever",
+        "Titulo": "Cabin Fever 2: Spring Fever",
+        "Duracao": "5160.0",
+        "Elenco": [],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Ti_West"
+        ],
+        "Escritores": [],
+        "Músicos": [
+            "http://dbpedia.org/resource/Ryan_Shore"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabin_Pressure_(film)",
+        "Titulo": "Cabin Pressure (film)",
+        "Duracao": "5580.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Michael_Kopsa",
+            "http://dbpedia.org/resource/John_Pyper-Ferguson",
+            "http://dbpedia.org/resource/Craig_Sheffer"
+        ],
+        "Realizadores": [],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabin_by_the_Lake",
+        "Titulo": "Cabin by the Lake",
+        "Duracao": "5460.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Judd_Nelson",
+            "http://dbpedia.org/resource/Hedy_Burress",
+            "http://dbpedia.org/resource/Michael_Weatherly"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Po-Chih_Leong"
+        ],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabin_in_the_Sky_(film)",
+        "Titulo": "Cabin in the Sky (film)",
+        "Duracao": "5880.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Rex_Ingram_(actor)",
+            "http://dbpedia.org/resource/Lena_Horne",
+            "http://dbpedia.org/resource/Louis_Armstrong",
+            "http://dbpedia.org/resource/Eddie_%22Rochester%22_Anderson",
+            "http://dbpedia.org/resource/Ethel_Waters"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Vincente_Minnelli",
+            "http://dbpedia.org/resource/Busby_Berkeley"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Marc_Connelly"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/George_Bassman",
+            "http://dbpedia.org/resource/Georgie_Stoll",
+            "http://dbpedia.org/resource/Hall_Johnson",
+            "http://dbpedia.org/resource/Roger_Edens"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabiria",
+        "Titulo": "Cabiria",
+        "Duracao": "8880.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Bartolomeo_Pagano"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Giovanni_Pastrone"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Gabriele_D'Annunzio",
+            "http://dbpedia.org/resource/Giovanni_Pastrone"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Ildebrando_Pizzetti",
+            "http://dbpedia.org/resource/Manlio_Mazza"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Caboblanco",
+        "Titulo": "Caboblanco",
+        "Duracao": "5220.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Denny_Miller",
+            "http://dbpedia.org/resource/Fernando_Rey",
+            "http://dbpedia.org/resource/Jason_Robards",
+            "http://dbpedia.org/resource/Charles_Bronson",
+            "http://dbpedia.org/resource/Dominique_Sanda"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/J._Lee_Thompson"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Morton_S._Fine"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Jerry_Goldsmith"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cabocla",
+        "Titulo": "Cabocla",
+        "Duracao": "2700.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Carolina_Kasting",
+            "http://dbpedia.org/resource/Patrícia_Pillar",
+            "http://dbpedia.org/resource/Regiane_Alves",
+            "http://dbpedia.org/resource/Reginaldo_Faria",
+            "http://dbpedia.org/resource/Vanessa_Giácomo",
+            "http://dbpedia.org/resource/Vera_Holtz",
+            "http://dbpedia.org/resource/Mauro_Mendonça",
+            "http://dbpedia.org/resource/Malvino_Salvador",
+            "http://dbpedia.org/resource/Tony_Ramos",
+            "http://dbpedia.org/resource/Daniel_de_Oliveira_(actor)",
+            "http://dbpedia.org/resource/Danton_Mello",
+            "http://dbpedia.org/resource/Eriberto_Leão",
+            "http://dbpedia.org/resource/Othon_Bastos",
+            "http://dbpedia.org/resource/Otávio_Augusto",
+            "http://dbpedia.org/resource/Jussara_Freire",
+            "http://dbpedia.org/resource/Maria_Flor"
+        ],
+        "Realizadores": [],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Caccia_al_tesoro",
+        "Titulo": "Caccia al tesoro",
+        "Duracao": "5400.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Carlo_Buccirosso",
+            "http://dbpedia.org/resource/Vincenzo_Salemme",
+            "http://dbpedia.org/resource/Max_Tortora",
+            "http://dbpedia.org/resource/Serena_Rossi"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Carlo_Vanzina"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Carlo_Vanzina"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Giuliano_Taviani"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cacería",
+        "Titulo": "Cacería",
+        "Duracao": "5400.0",
+        "Elenco": [],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Ezio_Massa"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Ezio_Massa"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Mariano_Nuñez_West"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Caché_(film)",
+        "Titulo": "Caché (film)",
+        "Duracao": "7080.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Annie_Girardot",
+            "http://dbpedia.org/resource/Daniel_Duval",
+            "http://dbpedia.org/resource/Bernard_Le_Coq",
+            "http://dbpedia.org/resource/Denis_Podalydès",
+            "http://dbpedia.org/resource/Juliette_Binoche",
+            "http://dbpedia.org/resource/Daniel_Auteuil",
+            "http://dbpedia.org/resource/Nathalie_Richard",
+            "http://dbpedia.org/resource/Maurice_Bénichou"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Michael_Haneke"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Michael_Haneke"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cactus_(1986_film)",
+        "Titulo": "Cactus (1986 film)",
+        "Duracao": "5580.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Isabelle_Huppert",
+            "http://dbpedia.org/resource/Robert_Menzies_(actor)"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Paul_Cox_(director)"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Bob_Ellis",
+            "http://dbpedia.org/resource/Paul_Cox_(director)"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cactus_(2008_film)",
+        "Titulo": "Cactus (2008 film)",
+        "Duracao": "5100.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/David_Lyons_(actor)",
+            "http://dbpedia.org/resource/Bryan_Brown",
+            "http://dbpedia.org/resource/Shane_Jacobson"
+        ],
+        "Realizadores": [],
+        "Escritores": [],
+        "Músicos": [
+            "http://dbpedia.org/resource/Nerida_Tyson-Chew"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cactus_Flower_(film)",
+        "Titulo": "Cactus Flower (film)",
+        "Duracao": "6180.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Walter_Matthau",
+            "http://dbpedia.org/resource/Goldie_Hawn",
+            "http://dbpedia.org/resource/Ingrid_Bergman"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Gene_Saks"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/I._A._L._Diamond"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Quincy_Jones"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cactus_Makes_Perfect",
+        "Titulo": "Cactus Makes Perfect",
+        "Duracao": "1038.0",
+        "Tipo": "Curta metragem",
+        "Elenco": [
+            "http://dbpedia.org/resource/Vernon_Dent",
+            "http://dbpedia.org/resource/Moe_Howard",
+            "http://dbpedia.org/resource/Monte_Collins",
+            "http://dbpedia.org/resource/Curly_Howard",
+            "http://dbpedia.org/resource/Eddie_Laughton",
+            "http://dbpedia.org/resource/Ernie_Adams_(actor)",
+            "http://dbpedia.org/resource/Larry_Fine"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Del_Lord"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Elwood_Ullman",
+            "http://dbpedia.org/resource/Monte_Collins"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cada_quién_su_lucha",
+        "Titulo": "Cada quién su lucha",
+        "Duracao": "5400.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Gaspar_Henaine",
+            "http://dbpedia.org/resource/Marco_Antonio_Campos",
+            "http://dbpedia.org/resource/María_Duval",
+            "http://dbpedia.org/resource/Baby_Bell_(actress)"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Gilberto_Martínez_Solares"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Roberto_Gómez_Bolaños"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadaver_(2020_film)",
+        "Titulo": "Cadaver (2020 film)",
+        "Duracao": "5160.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Thorbjørn_Harr"
+        ],
+        "Realizadores": [],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadavres",
+        "Titulo": "Cadavres",
+        "Duracao": "7020.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Patrick_Huard",
+            "http://dbpedia.org/resource/Christopher_Heyerdahl",
+            "http://dbpedia.org/resource/Gilles_Renaud",
+            "http://dbpedia.org/resource/Sylvie_Boucher",
+            "http://dbpedia.org/resource/Julie_Le_Breton",
+            "http://dbpedia.org/resource/Marie_Brassard",
+            "http://dbpedia.org/resource/Patrice_Robitaille"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Érik_Canuel"
+        ],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Caddie_(film)",
+        "Titulo": "Caddie (film)",
+        "Duracao": "6360.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Helen_Morse",
+            "http://dbpedia.org/resource/Jack_Thompson_(actor)",
+            "http://dbpedia.org/resource/Jacki_Weaver"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Donald_Crombie"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Joan_Long"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Caddyshack",
+        "Titulo": "Caddyshack",
+        "Duracao": "5880.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Rodney_Dangerfield",
+            "http://dbpedia.org/resource/Ted_Knight",
+            "http://dbpedia.org/resource/Bill_Murray",
+            "http://dbpedia.org/resource/Chevy_Chase",
+            "http://dbpedia.org/resource/Michael_O'Keefe"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Harold_Ramis"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Brian_Doyle-Murray",
+            "http://dbpedia.org/resource/Harold_Ramis",
+            "http://dbpedia.org/resource/Douglas_Kenney"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Johnny_Mandel"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Caddyshack_II",
+        "Titulo": "Caddyshack II",
+        "Duracao": "5880.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Robert_Stack",
+            "http://dbpedia.org/resource/Paul_Bartel",
+            "http://dbpedia.org/resource/Dina_Merrill",
+            "http://dbpedia.org/resource/Jonathan_Silverman",
+            "http://dbpedia.org/resource/Dan_Aykroyd",
+            "http://dbpedia.org/resource/Dyan_Cannon",
+            "http://dbpedia.org/resource/Chevy_Chase",
+            "http://dbpedia.org/resource/Marsha_Warfield",
+            "http://dbpedia.org/resource/Randy_Quaid",
+            "http://dbpedia.org/resource/Brian_McNamara",
+            "http://dbpedia.org/resource/Jackie_Mason"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Allan_Arkush"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/PJ_Torokvei",
+            "http://dbpedia.org/resource/Harold_Ramis"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Ira_Newborn"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadence_(film)",
+        "Titulo": "Cadence (film)",
+        "Duracao": "5820.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Charlie_Sheen",
+            "http://dbpedia.org/resource/Laurence_Fishburne",
+            "http://dbpedia.org/resource/Martin_Sheen",
+            "http://dbpedia.org/resource/Michael_Beach",
+            "http://dbpedia.org/resource/Ramon_Estevez"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Martin_Sheen"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Dennis_Shryack"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Georges_Delerue"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadences_obstinées",
+        "Titulo": "Cadences obstinées",
+        "Duracao": "5760.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Ricardo_Pereira_(actor)",
+            "http://dbpedia.org/resource/Franco_Nero",
+            "http://dbpedia.org/resource/Nuno_Lopes",
+            "http://dbpedia.org/resource/Gérard_Depardieu",
+            "http://dbpedia.org/resource/Asia_Argento"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Fanny_Ardant"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Fanny_Ardant"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadet_Girl",
+        "Titulo": "Cadet Girl",
+        "Duracao": "4080.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Carole_Landis",
+            "http://dbpedia.org/resource/Robert_Lowery_(actor)",
+            "http://dbpedia.org/resource/George_Montgomery_(actor)",
+            "http://dbpedia.org/resource/William_Tracy",
+            "http://dbpedia.org/resource/Janis_Carter",
+            "http://dbpedia.org/resource/Shepperd_Strudwick"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Ray_McCarey"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Stanley_Rauh"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/David_Buttolph"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadet_Holiday",
+        "Titulo": "Cadet Holiday",
+        "Duracao": "660.0",
+        "Tipo": "Curta metragem",
+        "Elenco": [],
+        "Realizadores": [
+            "http://dbpedia.org/resource/David_Bairstow_(director)"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/David_Bairstow_(director)"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Robert_Fleming_(composer)"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadet_Kelly",
+        "Titulo": "Cadet Kelly",
+        "Duracao": "5760.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Sarah_Gadon",
+            "http://dbpedia.org/resource/Christy_Carlson_Romano",
+            "http://dbpedia.org/resource/Andrea_Lewis",
+            "http://dbpedia.org/resource/Linda_Kash",
+            "http://dbpedia.org/resource/Hilary_Duff",
+            "http://dbpedia.org/resource/Shawn_Ashmore",
+            "http://dbpedia.org/resource/Gary_Cole",
+            "http://dbpedia.org/resource/Aimee_Garcia"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Larry_Shaw_(director)"
+        ],
+        "Escritores": [],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadets_(film)",
+        "Titulo": "Cadets (film)",
+        "Duracao": "5640.0",
+        "Elenco": [],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Karl_Ritter_(director)"
+        ],
+        "Escritores": [],
+        "Músicos": [
+            "http://dbpedia.org/resource/Herbert_Windt"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadets_on_Parade",
+        "Titulo": "Cadets on Parade",
+        "Duracao": "3960.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Robert_Warwick",
+            "http://dbpedia.org/resource/Joseph_Crehan",
+            "http://dbpedia.org/resource/Freddie_Bartholomew",
+            "http://dbpedia.org/resource/Minna_Gombell",
+            "http://dbpedia.org/resource/Jimmy_Lydon",
+            "http://dbpedia.org/resource/Raymond_Hatton"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Lew_Landers"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Howard_J._Green",
+            "http://dbpedia.org/resource/Frank_Fenton_(writer)"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadillac_Desert_(film)",
+        "Titulo": "Cadillac Desert (film)",
+        "Duracao": "16200.0",
+        "Elenco": [],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Jon_Else"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Marc_Reisner",
+            "http://dbpedia.org/resource/Sandra_Postel",
+            "http://dbpedia.org/resource/Jon_Else"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Martin_Bresnick"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadillac_Girls",
+        "Titulo": "Cadillac Girls",
+        "Duracao": "5760.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Adam_Beach",
+            "http://dbpedia.org/resource/Gregory_Harrison",
+            "http://dbpedia.org/resource/Jennifer_Dale",
+            "http://dbpedia.org/resource/Mia_Kirshner"
+        ],
+        "Realizadores": [],
+        "Escritores": [
+            "http://dbpedia.org/resource/Peter_Behrens_(writer)"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Simon_Kendall"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadillac_Man",
+        "Titulo": "Cadillac Man",
+        "Duracao": "5820.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Fran_Drescher",
+            "http://dbpedia.org/resource/Pamela_Reed",
+            "http://dbpedia.org/resource/Robin_Williams",
+            "http://dbpedia.org/resource/Tim_Robbins"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Roger_Donaldson"
+        ],
+        "Escritores": [],
+        "Músicos": [
+            "http://dbpedia.org/resource/J._Peter_Robinson"
+        ]
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cadillac_Records",
+        "Titulo": "Cadillac Records",
+        "Duracao": "6540.0",
+        "Elenco": [],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Darnell_Martin"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Darnell_Martin"
+        ],
+        "Músicos": []
+    },
+    {
+        "uri": "http://dbpedia.org/resource/Cado_dalle_nubi",
+        "Titulo": "Cado dalle nubi",
+        "Duracao": "5700.0",
+        "Elenco": [
+            "http://dbpedia.org/resource/Giulia_Michelini",
+            "http://dbpedia.org/resource/Checco_Zalone"
+        ],
+        "Realizadores": [
+            "http://dbpedia.org/resource/Gennaro_Nunziante"
+        ],
+        "Escritores": [
+            "http://dbpedia.org/resource/Gennaro_Nunziante",
+            "http://dbpedia.org/resource/Checco_Zalone"
+        ],
+        "Músicos": [
+            "http://dbpedia.org/resource/Checco_Zalone"
+        ]
+    }
+]
