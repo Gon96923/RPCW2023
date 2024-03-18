@@ -18,7 +18,7 @@ select distinct ?s ?label ?time where {
         filter(lang(?label)="en").
     }
     optional{?s dbo:runtime ?time .}    
-}
+}OFFSET 0
 """
 
 # Define the headers
