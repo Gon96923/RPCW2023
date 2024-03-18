@@ -4,7 +4,7 @@ Construir um dataaset, em formato json, sobre cinema, com ajuda da dbpedia.
 
 # Solução
 
-Através de diveresas queries SPARQL foram adquiridas as seguintes informações sobre cada filme presente na dbpedia:
+Através de diveresas queries SPARQL foi adquirida uma lista com todos os filmes presentes na dbpedia, assim como as seguintes informações sobre cada um:
 - uri
 - Titulo
 - Duração
