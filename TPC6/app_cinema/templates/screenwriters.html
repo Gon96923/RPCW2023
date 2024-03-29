@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8"/>
+        <title>Cinema: ScreenWriters</title>
+        <link rel="icon" href="{{url_for('static',filename='favicon.png')}}" type="image/x-icon"/>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/w3.css')}}"/>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+                
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+                
+            tr:nth-child(even) {
+                background-color: #D6EEEE;
+            }
+            </style>
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+                <h1>ScreenWriters</h1>
+            </header>
+
+            <div class="w3-container">
+                <table class="w3-table-all">
+                    <tr>
+                        <th>Name</th>
+                        <th>Birth Date</th>
+
+                    </tr>
+                    {% for entry in data %}
+                    <tr>
+                        <td><a href="/screenwriters/{{entry.name.value}}">{{entry.name.value}}</a></td>
+                        <td>{{entry.birthDate.value}}</td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+            <footer class="w3-container w3-purple">
+                <h5>Gerado por RPCW2024</h5>
+            </footer>
+
+        </div>
+    </body>
+        
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meat charset="utf-8"/>
+        <title>Cinema</title>
+        <link rel="icon" href="{{url_for('static',filename='favicon.png')}}" type="image/x-icon"/>
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/w3.css')}}"/>
+    </header>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-blue">
+                <h1>Cinema</h1>
+            </header>
+
+            <div class="w3-container">
+                <ul class="w3-ul">
+                    <li><a href="/filmes">Films</a></li>
+                    <li><a href="/actors">Actors</a></li>
+                    <li><a href="/directors">Directors</a></li>
+                    <li><a href="/genres">Genres</a></li>
+                    <li><a href="/musicians">Musicians</a></li>
+                    <li><a href="/producers">Producers</a></li>
+                    <li><a href="/screenwriters">ScreenWriters</a></li>
+                    <li><a href="/writers">Writers</a></li>
+                    <li><a href="/books">Books</a></li>
+                </ul>
+            </div>
+            <footer class="w3-container w3-purple">
+                <h5><a href="/empty">Gerado por RPCW2024 em {{data.data}}</a></h5>
+            </footer>
+
+        </div>
+    </body>
+        
+</html>
