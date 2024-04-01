@@ -3,6 +3,11 @@
 
 Usar o flask para gerar uma interface web ao repositório filmes definido durante as aulas.
 
+# Solução
+
+- Utilizando a ontologia criada na aula passada e o dataset criada para o TPC 5(alterado entretanto), povoar a ontologia através do progama cinemaInspect.py.
+- Utilizando a ferramenta Flask criar uma interface web para a ontologia anteriormente criada e colocada no repositório criado pelo professor.
+
 # Ficheiros
 
 - [cinema.ttl](https://github.com/Gon96923/RPCW2024/blob/main/TPC5/filmes.json). ontologia inicial criada na aula.
