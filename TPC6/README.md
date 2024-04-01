@@ -3,9 +3,6 @@
 
 Usar o flask para gerar uma interface web ao repositório filmes definido durante as aulas.
 
-# Solução
-
-
 # Ficheiros
 
 - [cinema.ttl](https://github.com/Gon96923/RPCW2024/blob/main/TPC5/filmes.json). ontologia inicial criada na aula.
@@ -14,3 +11,42 @@ Usar o flask para gerar uma interface web ao repositório filmes definido durant
 - [mov.json](https://github.com/Gon96923/RPCW2024/blob/main/TPC5/movies.py) lista de todos os filmes no repsitório, asssim como os seus dados de interesse.(https://github.com/Gon96923/RPCW2024/blob/main/TPC5/mov.json).
 
 ## Na pasta app_cinema
+
+- [templates](https://github.com/Gon96923/RPCW2024/tree/main/TPC6/app_cinema/templates). pasta com todos os templates utilizados na crição da interface web.
+- [static](https://github.com/Gon96923/RPCW2024/tree/main/TPC6/app_cinema/static).
+- [app.py](https://github.com/Gon96923/RPCW2024/blob/main/TPC6/app_cinema/app.py). aplicação que gera a interface web através da ferramenta flask.
+
+# Queries
+
+Quantos filmes existem no repositório?
+```
+prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+SELECT (COUNT(?s) AS ?n)WHERE {
+  ?s a http://www.semanticweb.org/gvale/ontologies/2024/cinema/Film .
+}
+```
+
+Qual a distribuição de filmes por ano de lançamento?
+```
+bb
+```
+
+Qual a distribuição de filmes por género?
+```
+bb
+```
+
+Em que filmes participou o ator "Burt Reynolds"?
+```
+bb
+```
+
+Produz uma lista de atores com o seu nome e o número de filmes que realizou.
+```
+bb
+```
+
+Qual o título dos livros que aparecem associados aos filmes?
+```
+bb
+```
