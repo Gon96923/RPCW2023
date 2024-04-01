@@ -20,33 +20,53 @@ Usar o flask para gerar uma interface web ao repositório filmes definido durant
 
 Quantos filmes existem no repositório?
 ```
-prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT (COUNT(?s) AS ?n)WHERE {
-  ?s a http://www.semanticweb.org/gvale/ontologies/2024/cinema/Film .
+  ?s a tp:Film .
 }
 ```
 
 Qual a distribuição de filmes por ano de lançamento?
 ```
-bb
+prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?s ?date WHERE {
+  ?s a tp:Film .
+  ?s tp:date ?date .
+} order by ?release
 ```
 
 Qual a distribuição de filmes por género?
 ```
-bb
+prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?gen (COUNT(?s) AS ?n) WHERE {
+  ?s a tp:Film .
+  ?s tp:hasGenre ?gen .
+} group by ?gen
+order by desc(?n)
 ```
 
 Em que filmes participou o ator "Burt Reynolds"?
 ```
-bb
+prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?s WHERE {
+  ?s a tp:Film .
+  ?s tp:hasActor ?ac .
+  ?ac tp:name "Burt_Reynolds".
+}
 ```
 
 Produz uma lista de atores com o seu nome e o número de filmes que realizou.
 ```
-bb
+prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 ```
 
 Qual o título dos livros que aparecem associados aos filmes?
 ```
-bb
+prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 ```
