@@ -64,13 +64,13 @@ SELECT ?s WHERE {
 }
 ```
 
-Produz uma lista de atores com o seu nome e o número de filmes que realizou.
+Produz uma lista de realizadores com o seu nome e o número de filmes que realizou.
 ```
 prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?name (COUNT(?fi) AS ?n) WHERE {
-  ?s a tp:Actor .
-  ?s tp:acted ?fi .
+  ?s a tp:Director .
+  ?s tp:directed ?fi .
   ?ac tp:name ?name.
 }
 ```
