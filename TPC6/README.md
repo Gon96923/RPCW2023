@@ -8,6 +8,8 @@ Usar o flask para gerar uma interface web ao repositório filmes definido durant
 - Utilizando a ontologia criada na aula passada e o dataset criada para o TPC 5(alterado entretanto), povoar a ontologia através do progama cinemaInspect.py.
 - Utilizando a ferramenta Flask criar uma interface web para a ontologia anteriormente criada e colocada no repositório criado pelo professor.
 
+As ObjectProperties hasBook e BookOf foram criadas para fazer associação entre Film e Book já não foi criada durante a aula.
+
 # Ficheiros
 
 - [cinema.ttl](https://github.com/Gon96923/RPCW2024/blob/main/TPC5/filmes.json). ontologia inicial criada na aula.
