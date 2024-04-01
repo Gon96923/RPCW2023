@@ -63,10 +63,19 @@ Produz uma lista de atores com o seu nome e o número de filmes que realizou.
 ```
 prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?name (COUNT(?fi) AS ?n) WHERE {
+  ?s a tp:Actor .
+  ?s tp:acted ?fi .
+  ?ac tp:name ?name.
+}
 ```
 
 Qual o título dos livros que aparecem associados aos filmes?
 ```
 prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?b WHERE {
+  ?s a tp:Film .
+  ?s tp:hasBook ?b.
+}
 ```
