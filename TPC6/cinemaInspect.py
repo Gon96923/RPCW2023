@@ -12,15 +12,16 @@ with open("mov.json", "r", encoding='UTF-8') as f:
 cinema = Namespace("http://www.semanticweb.org/gvale/ontologies/2024/cinema/")
 
 for filme in data:
-    f_uri = URIRef(f"{cinema}{filme['uri'].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
+    f_uri = URIRef(f"{cinema}{filme['uri'].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
     g.add((f_uri,RDF.type,cinema.Film))
     if filme["Titulo"] != [] :
         g.add((f_uri,cinema.title,Literal(filme["Titulo"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?"))))
     else:
         g.add((f_uri,cinema.title,Literal("")))
+    g.add((f_uri,cinema.description,Literal(filme["Resumo"].replace("%22","'").replace("%25","%").replace("%3F","?"))))
 
     for actor in filme["Elenco"]:
-        uri = URIRef(f"{cinema}{actor["uri"].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{actor["uri"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         name = actor["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?")
         bd = actor["birthDate"]
         g.add((uri,RDF.type,cinema.Actor))
@@ -29,7 +30,7 @@ for filme in data:
         g.add((f_uri,cinema.hasActor,uri))
 
     for realizador in filme["Realizadores"]:
-        uri = URIRef(f"{cinema}{realizador["uri"].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{realizador["uri"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         name = realizador["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?")
         bd = realizador["birthDate"]
         g.add((uri,RDF.type,cinema.Director))        
@@ -38,7 +39,7 @@ for filme in data:
         g.add((f_uri,cinema.hasDirector,uri))
     
     for escritor in filme["Escritores"]:
-        uri = URIRef(f"{cinema}{escritor["uri"].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{escritor["uri"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         name = escritor["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?")
         bd = escritor["birthDate"]
         g.add((uri,RDF.type,cinema.Writer))
@@ -47,7 +48,7 @@ for filme in data:
         g.add((f_uri,cinema.hasWriter,uri))
 
     for musico in filme["Músicos"]:
-        uri = URIRef(f"{cinema}{musico["uri"].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{musico["uri"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         name = musico["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?")
         bd = musico["birthDate"]
         g.add((uri,RDF.type,cinema.Musician))
@@ -56,12 +57,12 @@ for filme in data:
         g.add((f_uri,cinema.hasComposer,uri))
     
     for musica in filme["Músicas"]:
-        uri = URIRef(f"{cinema}{musica["Name"].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{musica["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         g.add((uri,RDF.type,cinema.Music))
         g.add((f_uri,cinema.hasMusic,uri))
     
     for argumentista in filme["Argumentistas"]:
-        uri = URIRef(f"{cinema}{argumentista["uri"].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{argumentista["uri"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         name = argumentista["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?")
         bd = argumentista["birthDate"]
         g.add((uri,RDF.type,cinema.Screenwriter))
@@ -70,7 +71,7 @@ for filme in data:
         g.add((f_uri,cinema.hasScreenwriter,uri))
     
     for produtor in filme["Produtores"]:
-        uri = URIRef(f"{cinema}{produtor["uri"].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{produtor["uri"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         name = produtor["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?")
         bd = produtor["birthDate"]
         g.add((uri,RDF.type,cinema.Producer))
@@ -79,24 +80,19 @@ for filme in data:
         g.add((f_uri,cinema.hasProducer,uri))
 
     if filme["Lançamento"] != [] :
-        uri = URIRef(f"{cinema}{filme["Lançamento"].replace(" ","_").replace("%22","'").replace("%25","").replace("%3F","?")}")
-        g.add((f_uri,cinema.date,uri))
-    else:
-        g.add((f_uri,cinema.date,Literal("")))
+        uri = URIRef(f"{cinema}{filme["Lançamento"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
+        g.add((uri,RDF.type,cinema.Release))
+        g.add((f_uri,cinema.hasRelease,uri))
 
-    if filme['Duracao'] != [] :
-        d = float(filme["Duracao"].replace(",",".")) // 60
-        g.add((f_uri,cinema.duration,Literal(d)))
-    else:
-        g.add((f_uri,cinema.duration,Literal("0")))
+    
     
     for genero in filme["Géneros"]:
-        uri = URIRef(f"{cinema}{genero["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{genero["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         g.add((uri,RDF.type,cinema.Genre))
         g.add((f_uri,cinema.hasGenre,uri))
     
     for livro in filme["Livros"]:
-        uri = URIRef(f"{cinema}{livro["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?")}")
+        uri = URIRef(f"{cinema}{livro["Name"].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
         g.add((uri,RDF.type,cinema.Book))
         g.add((f_uri,cinema.hasBook,uri))
 
@@ -109,5 +105,3 @@ print(len(g))
 f = open('cinema_pg53849.ttl', 'wb')
 f.write(g.serialize().encode('UTF-8'))
 print("=====================================")
-for smt in g:
-    pprint.pprint(smt)
