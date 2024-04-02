@@ -27,7 +27,7 @@ As ObjectProperties hasBook e BookOf foram criadas para fazer associação entre
 
 Quantos filmes existem no repositório?
 ```
-prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT (COUNT(?s) AS ?n)WHERE {
   ?s a tp:Film .
@@ -36,7 +36,7 @@ SELECT (COUNT(?s) AS ?n)WHERE {
 
 Qual a distribuição de filmes por ano de lançamento?
 ```
-prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?s ?date WHERE {
   ?s a tp:Film .
@@ -46,7 +46,7 @@ SELECT ?s ?date WHERE {
 
 Qual a distribuição de filmes por género?
 ```
-prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?gen (COUNT(?s) AS ?n) WHERE {
   ?s a tp:Film .
@@ -57,7 +57,7 @@ order by desc(?n)
 
 Em que filmes participou o ator "Burt Reynolds"?
 ```
-prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?s WHERE {
   ?s a tp:Film .
@@ -68,7 +68,7 @@ SELECT ?s WHERE {
 
 Produz uma lista de realizadores com o seu nome e o número de filmes que realizou.
 ```
-prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?name (COUNT(?fi) AS ?n) WHERE {
   ?s a tp:Director .
@@ -79,7 +79,7 @@ SELECT ?name (COUNT(?fi) AS ?n) WHERE {
 
 Qual o título dos livros que aparecem associados aos filmes?
 ```
-prefix tp: <http://www.semanticweb.org/andre/ontologies/2024/cinema/>
+prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
 prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?b WHERE {
   ?s a tp:Film .
