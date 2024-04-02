@@ -59,7 +59,7 @@ select * where {{
     optional {{ ?s tp:hasWriter ?wr . }}
     optional {{ ?s tp:date ?date . }}
     optional {{ ?s tp:hasBook ?book . }}
-    optional {{ ?s tp:description ?description .
+    optional {{ ?s tp:description ?description .}}
     
 }}
 '''

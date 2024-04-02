@@ -41,6 +41,14 @@
                         <td>{{data['date']}}</td>
                     </tr>
                     <tr>
+                        <th>Description</th>
+                        <td>
+                            {% for actor in data['description'] %}
+                                {{actor}}
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    <tr>
                         <th>Starring</th>
                         <td>
                             {% for actor in data['actor'] %}
