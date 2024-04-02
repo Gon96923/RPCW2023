@@ -9,7 +9,7 @@ with open("mov.json", "r", encoding='UTF-8') as f:
     data = json.load(f)
     f.close()
 
-cinema = Namespace("http://www.semanticweb.org/gvale/ontologies/2024/cinema/")
+cinema = Namespace("http://rpcw.di.uminho.pt/2024/cinema/")
 
 for filme in data:
     f_uri = URIRef(f"{cinema}{filme['uri'].replace(" ","_").replace("%22","'").replace("%25","%").replace("%3F","?").replace("%","")}")
