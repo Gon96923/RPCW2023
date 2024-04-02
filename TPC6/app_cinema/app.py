@@ -59,6 +59,7 @@ select * where {{
     optional {{ ?s tp:hasWriter ?wr . }}
     optional {{ ?s tp:date ?date . }}
     optional {{ ?s tp:hasBook ?book . }}
+    optional {{ ?s tp:description ?description .
     
 }}
 '''
@@ -82,7 +83,8 @@ select * where {{
             'wr': [],
             'date': [],
             'book': [],
-            'comp': []
+            'comp': [],
+            'description': []
         }
 
         for d in dados:
@@ -110,6 +112,8 @@ select * where {{
                 dic['book'].append(d['book']['value'])
             if 'comp' in d and d['comp']['value'] not in dic['mus']:
                 dic['comp'].append(d['comp']['value'])
+            if 'description' in d and d['description']['value'] not in dic['description']:
+                dic['description'] = d['description']['value']
 
         
         return render_template('filme.html', data = dic)
