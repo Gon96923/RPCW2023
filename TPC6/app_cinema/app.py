@@ -21,7 +21,7 @@ def index():
 @app.route('/filmes')
 def filmes():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Film ;
         tp:title ?title .
@@ -43,7 +43,7 @@ select * where{
 @app.route('/filmes/<nome>')
 def filme(nome):
     sparql_query = f'''
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where {{
     ?s a tp:Film .
     ?s tp:title "{nome}" .
@@ -120,7 +120,7 @@ select * where {{
 @app.route('/actors')
 def actors():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Actor ;
         tp:name ?name ;
@@ -141,7 +141,7 @@ select * where{
 @app.route('/actors/<nome>')
 def actor(nome):
     sparql_query = f"""
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{{
     ?s a tp:Actor ;
         tp:name "{nome}" ;
@@ -172,7 +172,7 @@ select * where{{
 @app.route('/directors')
 def directors():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Director ;
         tp:name ?name ;
@@ -194,7 +194,7 @@ select * where{
 @app.route('/directors/<nome>')
 def director(nome):
     sparql_query = f"""
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{{
     ?s a tp:Director ;
         tp:name "{nome}" ;
@@ -224,7 +224,7 @@ select * where{{
 @app.route('/screenwriters')
 def screenwriters():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Screenwriter ;
         tp:name ?name ;
@@ -245,7 +245,7 @@ select * where{
 @app.route('/screenwriters/<nome>')
 def screenwriter(nome):
     sparql_query = f"""
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{{
     ?s a tp:Screenwriter ;
         tp:name "{nome}" ;
@@ -275,7 +275,7 @@ select * where{{
 @app.route('/musicians')
 def musicians():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Musician ;
         tp:name ?name ;
@@ -296,7 +296,7 @@ select * where{
 @app.route('/musicians/<nome>')
 def musician(nome):
     sparql_query = f"""
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{{
     ?s a tp:Musician ;
         tp:name "{nome}" ;
@@ -326,7 +326,7 @@ select * where{{
 @app.route('/producers')
 def producers():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Producer ;
         tp:name ?name ;
@@ -347,7 +347,7 @@ select * where{
 @app.route('/producers/<nome>')
 def producer(nome):
     sparql_query = f"""
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{{
     ?s a tp:Producer ;
         tp:name "{nome}" ;
@@ -377,7 +377,7 @@ select * where{{
 @app.route('/writers')
 def writers():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Writer ;
         tp:name ?name ;
@@ -398,7 +398,7 @@ select * where{
 @app.route('/writers/<nome>')
 def writer(nome):
     sparql_query = f"""
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{{
     ?film a tp:Film .
     ?film tp:hasWriter ?wr .
@@ -429,7 +429,7 @@ select * where{{
 @app.route('/books')
 def books():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Book .
 }
@@ -448,7 +448,7 @@ select * where{
 @app.route('/genres')
 def genres():
     sparql_query = """
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{
     ?s a tp:Genre .
 }
@@ -467,7 +467,7 @@ select * where{
 @app.route('/genres/<nome>')
 def genre(nome):
     sparql_query = f"""
-prefix tp: <http://www.semanticweb.org/gvale/ontologies/2024/cinema/>
+prefix tp: <http://rpcw.di.uminho.pt/2024/cinema/>
 select * where{{
     ?film a tp:Film .
     ?film tp:hasGenre tp:{nome} .
