@@ -1,0 +1,68 @@
+
+1 ############################################################
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/gvale/ontologies/2024/3/avalia/>
+select (count(distinct ?s) as ?count) where { 
+	?s rdf:type :Aluno 
+}
+
+2 ############################################################
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/gvale/ontologies/2024/3/avalia/>
+select (count(distinct ?s) as ?count) where { 
+	?s rdf:type :Aluno.
+    ?s :inCurso :LCC.
+}
+
+3 ############################################################
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/gvale/ontologies/2024/3/avalia/>
+select ?s ?nome ?c ?nota where { 
+	?s rdf:type :Aluno.
+    ?s :alunoNome ?nome.
+    ?s :inCurso ?c.
+    ?s :hasExame ?e.
+    ?e :exameTipo "normal".
+    ?e :exameNota ?nota.
+    FILTER(?nota >= 10)
+} 
+ORDER BY ?nome
+
+4 ############################################################
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/gvale/ontologies/2024/3/avalia/>
+select ?nota (COUNT(?s) as ?n) where { 
+	?s rdf:type :Aluno.
+    ?s :hasProjeto ?p.
+    ?p :projetoNota ?nota.
+} 
+GROUP BY ?nota
+
+5 ############################################################
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/gvale/ontologies/2024/3/avalia/>
+select ?s ?nome ?c (SUM(?n) as ?sum) where { 
+	?s rdf:type :Aluno.
+    ?s :alunoNome ?nome.
+    ?s :inCurso ?c.
+    ?s :hasTPC ?tpc.
+	?tpc :tpcNota ?n.
+
+} GROUP BY ?s ?nome ?c
+ORDER BY DESC(?sum)
+
+6 ############################################################
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semanticweb.org/gvale/ontologies/2024/3/avalia/>
+select ?c (count(distinct ?s) as ?count) where { 
+	?s rdf:type :Aluno.
+    ?s :inCurso ?c.
+
+} GROUP BY ?c
+ORDER BY ?c
